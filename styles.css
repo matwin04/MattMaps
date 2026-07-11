@@ -88,6 +88,20 @@ body {
   text-decoration: line-through;
 }
 
+.stop-group-header td {
+  background: #eef1f4;
+  font-weight: bold;
+  font-size: 13px;
+  padding-top: 8px;
+  border-top: 2px solid #ccc;
+}
+
+.stop-distance {
+  font-weight: normal;
+  color: #777;
+  font-size: 11px;
+}
+
 @media (max-width: 700px) {
   #app {
     flex-direction: column;
