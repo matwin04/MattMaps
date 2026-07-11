@@ -88,12 +88,20 @@ body {
   text-decoration: line-through;
 }
 
+.stop-group-header {
+  cursor: pointer;
+}
+
 .stop-group-header td {
   background: #eef1f4;
   font-weight: bold;
   font-size: 13px;
   padding-top: 8px;
   border-top: 2px solid #ccc;
+}
+
+.stop-group-header:hover td {
+  background: #e2e8ee;
 }
 
 .stop-distance {
