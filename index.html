@@ -9,19 +9,9 @@
     rel="stylesheet"
     href="https://unpkg.com/leaflet/dist/leaflet.css"
   />
+  <link rel="stylesheet" href="styles.css" />
 
   <style>
-    html, body {
-      margin: 0;
-      height: 100%;
-      font-family: sans-serif;
-    }
-
-    #map {
-      width: 100%;
-      height: 100vh;
-    }
-
     .popup-title {
       font-size: 16px;
       font-weight: bold;
@@ -41,7 +31,31 @@
 </head>
 <body>
 
-<div id="map"></div>
+<div id="app">
+  <div id="map"></div>
+
+  <aside id="sidebar">
+    <div class="sidebar-header">
+      <h2>Nearby Departures</h2>
+      <span id="departure-count">0</span>
+    </div>
+    <div class="sidebar-body">
+      <table class="vehicle-table">
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Headsign</th>
+            <th>Stop</th>
+            <th>ETA</th>
+          </tr>
+        </thead>
+        <tbody id="departure-table-body">
+          <!-- rows injected by script.js -->
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
