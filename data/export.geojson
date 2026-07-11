@@ -1,0 +1,6804 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-07-08T20:19:31Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/17680222",
+        "light_rail": "yes",
+        "name": "1st Street",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q4596639"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1893988,
+          33.7687147
+        ]
+      },
+      "id": "node/17680222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/17680230",
+        "alt_name": "Transit Mall",
+        "light_rail": "yes",
+        "name": "Downtown Long Beach",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q771702"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1929586,
+          33.7680387
+        ]
+      },
+      "id": "node/17680230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/17706965",
+        "light_rail": "yes",
+        "name": "5th Street",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q970664"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1893802,
+          33.7735381
+        ]
+      },
+      "id": "node/17706965"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/36373872",
+        "addr:city": "Burbank",
+        "addr:housenumber": "3750",
+        "addr:postcode": "91505",
+        "addr:state": "CA",
+        "addr:street": "W Empire Avenue",
+        "air_conditioning": "no",
+        "name": "Burbank Airport–South",
+        "name:Amtrak": "Hollywood Burbank Airport",
+        "network": "Amtrak;Metrolink",
+        "operator": "Caltrans",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:460.6",
+        "railway:ref": "BUR",
+        "source": "Yahoo",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q3096094",
+        "wikipedia": "en:Burbank Airport–South station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.353505,
+          34.1929507
+        ]
+      },
+      "id": "node/36373872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/54441238",
+        "aerialway": "station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6217747,
+          34.2700949
+        ]
+      },
+      "id": "node/54441238"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/122670487",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Balboa Island Ferry",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9002183,
+          33.6035136
+        ]
+      },
+      "id": "node/122670487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/122945728",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Balboa Island Ferry",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.898385,
+          33.6055299
+        ]
+      },
+      "id": "node/122945728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/123386730",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "5664",
+        "addr:postcode": "90016",
+        "addr:state": "CA",
+        "addr:street": "W Jefferson Boulevard",
+        "light_rail": "yes",
+        "name": "La Cienega/Jefferson",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q2092456"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3721521,
+          34.0263634
+        ]
+      },
+      "id": "node/123386730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/247141462",
+        "air_conditioning": "no",
+        "fee": "Disneyland Park admittance required to enter Downtown Disney station",
+        "internet_access": "no",
+        "name": "Downtown Disney Monorail Station",
+        "old_name": "Disneyland Hotel Monorail Station",
+        "public_transport": "station",
+        "railway": "station",
+        "source": "http://disneyland.disney.go.com/disneyland/disneyland-monorail/",
+        "tourism": "attraction",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.924528,
+          33.8094021
+        ]
+      },
+      "id": "node/247141462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/267072333",
+        "name": "Lower Tram Station",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "T1",
+        "source": "The Getty Foundation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.475692,
+          34.0875206
+        ]
+      },
+      "id": "node/267072333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/267072361",
+        "name": "Upper Tram Station",
+        "public_transport": "station",
+        "railway": "station",
+        "source": "The Getty Foundation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.47498,
+          34.0783519
+        ]
+      },
+      "id": "node/267072361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268371846",
+        "name": "Pershing Square",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q5919683"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2510126,
+          34.0496322
+        ]
+      },
+      "id": "node/268371846"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268372325",
+        "light_rail": "yes",
+        "location": "underground",
+        "name": "7th Street/Metro Center",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q3093639"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.258743,
+          34.0486587
+        ]
+      },
+      "id": "node/268372325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268547062",
+        "addr:state": "CA",
+        "name": "Los Angeles Union Station",
+        "name:de": "Los Angeles Hauptbahnhof",
+        "name:en": "Los Angeles Union Station",
+        "network": "Amtrak;Metrolink",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "platforms": "7",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:0.0",
+        "railway:ref": "LAX",
+        "toilets:wheelchair": "yes",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q198019",
+        "wikipedia": "en:Union Station (Los Angeles)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2342859,
+          34.0558624
+        ]
+      },
+      "id": "node/268547062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280551690",
+        "light_rail": "yes",
+        "name": "Lake",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q6474647"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1321159,
+          34.1518118
+        ]
+      },
+      "id": "node/280551690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/344373032",
+        "light_rail": "yes",
+        "name": "Westwood/Rancho Park",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q5421459"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4245788,
+          34.0368181
+        ]
+      },
+      "id": "node/344373032"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/347294846",
+        "aerialway": "station",
+        "aerialway:access": "exit",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9328836,
+          34.3455285
+        ]
+      },
+      "id": "node/347294846"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/347294847",
+        "aerialway": "station",
+        "aerialway:access": "entry",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9288166,
+          34.3492729
+        ]
+      },
+      "id": "node/347294847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/368173836",
+        "addr:state": "CA",
+        "ele": "49",
+        "gnis:feature_id": "1766007",
+        "name": "Fullerton",
+        "network": "Amtrak;Metrolink",
+        "old_name": "Fullerton Union Pacific Depot",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:165.1",
+        "railway:ref": "FUL",
+        "source": "USGS Geonames",
+        "train": "yes",
+        "website": "https://www.amtrak.com/stations/ful",
+        "wheelchair": "yes",
+        "wikidata": "Q3096498",
+        "wikipedia": "en:Fullerton Transportation Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9227053,
+          33.8685908
+        ]
+      },
+      "id": "node/368173836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/472433033",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Patsaouras Transit Plaza",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "source": "local_knowledge;bing_imagery",
+        "wikidata": "Q7148202"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2331657,
+          34.0552141
+        ]
+      },
+      "id": "node/472433033"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/597843980",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Dana Wharf",
+        "public_transport": "station",
+        "website": "https://danawharf.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.691636,
+          33.4600977
+        ]
+      },
+      "id": "node/597843980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/705015365",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Culver City Transit Center",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394733,
+          33.9880248
+        ]
+      },
+      "id": "node/705015365"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/769254839",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "operator": "TO Transit;VISTA;LADOT;LACMTA",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.8610712,
+          34.1749817
+        ]
+      },
+      "id": "node/769254839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/840553736",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Greyhound Bus Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1512762,
+          33.4959467
+        ]
+      },
+      "id": "node/840553736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/864284445",
+        "alt_name": "National/Palms",
+        "light_rail": "yes",
+        "name": "Palms",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q6970073"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4042754,
+          34.0293247
+        ]
+      },
+      "id": "node/864284445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/867659716",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Corona Transit Center",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.564392,
+          33.8818915
+        ]
+      },
+      "id": "node/867659716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/903534326",
+        "addr:state": "CA",
+        "name": "Moorpark",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:427.2",
+        "railway:ref": "MPK",
+        "source": "Yahoo",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q501599",
+        "wikipedia": "en:Moorpark station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.877889,
+          34.2848669
+        ]
+      },
+      "id": "node/903534326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1014537350",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0312496,
+          34.1516524
+        ]
+      },
+      "id": "node/1014537350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1018686742",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Yucaipa Transit Center",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057346,
+          34.0348038
+        ]
+      },
+      "id": "node/1018686742"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1206789486",
+        "aerialway": "station",
+        "aerialway:access": "exit",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0396557,
+          34.2061795
+        ]
+      },
+      "id": "node/1206789486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1209326747",
+        "name": "Corona–North Main",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:23.8",
+        "train": "yes",
+        "wikidata": "Q7056021",
+        "wikipedia": "en:Corona–North Main station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.5632973,
+          33.8822006
+        ]
+      },
+      "id": "node/1209326747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1231834589",
+        "amenity": "ferry_terminal",
+        "cargo": "passengers",
+        "ferry": "yes",
+        "name": "Frontierland Landing",
+        "note": "Both Ships do not operate during performances of Fantasmic. The Columbia does not operate in inclement weather. (Rain)",
+        "operator": "Disney Parks and Resorts",
+        "public_transport": "station",
+        "tourism": "attraction",
+        "wheelchair": "limited",
+        "wikidata": "Q3461623",
+        "wikipedia": "en:Sailing Ship Columbia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.920578,
+          33.8122417
+        ]
+      },
+      "id": "node/1231834589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1235707233",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Davy Crocket's Explorer Canoes",
+        "public_transport": "station",
+        "sport": "canoe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.922096,
+          33.8125261
+        ]
+      },
+      "id": "node/1235707233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1237782015",
+        "addr:state": "CA",
+        "name": "Pomona–Downtown",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:31.90",
+        "railway:ref": "POS",
+        "train": "yes",
+        "website": "https://www.amtrak.com/stations/pos.html",
+        "wikidata": "Q7227379",
+        "wikipedia": "en:Pomona–Downtown station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.7512982,
+          34.0590938
+        ]
+      },
+      "id": "node/1237782015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1252659665",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Victor Valley Transit Center",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2944644,
+          34.5381915
+        ]
+      },
+      "id": "node/1252659665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1252659732",
+        "addr:state": "CA",
+        "name": "Victorville",
+        "network": "Amtrak",
+        "operator": "Amtrak",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "VRV",
+        "train": "yes",
+        "website": "https://www.amtrak.com/stations/vrv.html",
+        "wheelchair": "yes",
+        "wikidata": "Q7927437",
+        "wikipedia": "en:Victor Valley Transportation Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.292552,
+          34.5369551
+        ]
+      },
+      "id": "node/1252659732"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1423335602",
+        "aerialway": "station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6101685,
+          34.2749066
+        ]
+      },
+      "id": "node/1423335602"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1423335603",
+        "aerialway": "station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6175353,
+          34.2817981
+        ]
+      },
+      "id": "node/1423335603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1423738389",
+        "aerialway": "station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9317484,
+          34.3405769
+        ]
+      },
+      "id": "node/1423738389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1423738394",
+        "aerialway": "station",
+        "aerialway:access": "entry",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9310513,
+          34.3429577
+        ]
+      },
+      "id": "node/1423738394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1423738397",
+        "aerialway": "station",
+        "aerialway:access": "entry",
+        "aerialway:summer:access": "exit",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9292373,
+          34.3427113
+        ]
+      },
+      "id": "node/1423738397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1446077221",
+        "name": "Fantasyland Station",
+        "public_transport": "station",
+        "railway": "station",
+        "website": "https://disneyland.disney.go.com/disneyland/casey-jr-circus-train/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.919284,
+          33.8137247
+        ]
+      },
+      "id": "node/1446077221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1451383696",
+        "name": "Mickey's Toontown Depot",
+        "old_name": "Videopolis Station",
+        "operator": "Disney Parks",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "DRR: Mickey's Toontown Depot",
+        "website": "https://disneyland.disney.go.com/attractions/disneyland/disneyland-railroad/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.918536,
+          33.8148454
+        ]
+      },
+      "id": "node/1451383696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1474022616",
+        "air_conditioning": "no",
+        "name": "New Orleans Square Station",
+        "old_name": "Frontierland Station",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "DRR: New Orleans Square Station",
+        "website": "https://disneyland.disney.go.com/attractions/disneyland/disneyland-railroad/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.921932,
+          33.8112026
+        ]
+      },
+      "id": "node/1474022616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1474022646",
+        "designation": "1",
+        "name": "Tomorrowland Station",
+        "operator": "Disney Parks",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "DRR: Tomorrowland Station",
+        "website": "https://disneyland.disney.go.com/attractions/disneyland/disneyland-railroad/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.915798,
+          33.8124524
+        ]
+      },
+      "id": "node/1474022646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1474022664",
+        "designation": "2",
+        "name": "Main Street Station",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "DRR: Main Street Station",
+        "website": "https://disneyland.disney.go.com/attractions/disneyland/disneyland-railroad/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.918956,
+          33.8099111
+        ]
+      },
+      "id": "node/1474022664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1524398657",
+        "name": "Camp Snoopy Depot",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9986513,
+          33.8452464
+        ]
+      },
+      "id": "node/1524398657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1618274467",
+        "light_rail": "yes",
+        "name": "Expo/La Brea",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q2092637"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3551479,
+          34.0248103
+        ]
+      },
+      "id": "node/1618274467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1618274502",
+        "light_rail": "yes",
+        "name": "Culver City",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q2092437"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3888493,
+          34.0278787
+        ]
+      },
+      "id": "node/1618274502"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1640836557",
+        "name": "Anaheim Canyon",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:1.2",
+        "train": "yes",
+        "wikidata": "Q4750877"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8404979,
+          33.8542053
+        ]
+      },
+      "id": "node/1640836557"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1709283231",
+        "light_rail": "yes",
+        "name": "26th Street/Bergamot",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q7089022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4690898,
+          34.0280089
+        ]
+      },
+      "id": "node/1709283231"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1723517667",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4978,
+          33.4421844
+        ]
+      },
+      "id": "node/1723517667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1723517702",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Catalina Flyer",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.898621,
+          33.6025947
+        ]
+      },
+      "id": "node/1723517702"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1768112047",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "11500",
+        "addr:postcode": "90045",
+        "addr:state": "CA",
+        "addr:street": "Aviation Boulevard",
+        "light_rail": "yes",
+        "name": "Aviation/Imperial",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q195806",
+        "wikipedia": "en:Aviation/Imperial station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3772137,
+          33.9296211
+        ]
+      },
+      "id": "node/1768112047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1838356031",
+        "addr:city": "Tustin",
+        "addr:housenumber": "2975",
+        "addr:postcode": "92780",
+        "addr:state": "CA",
+        "addr:street": "Edinger Avenue",
+        "bus": "yes",
+        "internet_access": "no",
+        "name": "Tustin",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "official_name": "Tustin Metrolink Station",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:179.5",
+        "source": "local_knowledge;bing_imagery",
+        "train": "yes",
+        "website": "https://metrolinktrains.com/rider-info/general-info/stations/tustin/",
+        "wikidata": "Q7856845"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8059916,
+          33.7079384
+        ]
+      },
+      "id": "node/1838356031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1842097118",
+        "addr:city": "Irvine",
+        "addr:housenumber": "15215",
+        "addr:postcode": "92618",
+        "addr:state": "CA",
+        "addr:street": "Barranca Parkway",
+        "air_conditioning": "yes",
+        "name": "Irvine",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:185.0",
+        "railway:ref": "IRV",
+        "source": "usgs_imagery;survey;image",
+        "source_ref": "AM909_DSCV0931",
+        "train": "yes",
+        "website": "https://metrolinktrains.com/stations/detail/station_id/100.html",
+        "wheelchair": "yes",
+        "wikidata": "Q3095798"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.733584,
+          33.6567847
+        ]
+      },
+      "id": "node/1842097118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1842116070",
+        "name": "Orange",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "old_name": "Orange Santa Fe Depot",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:172.6",
+        "railway:ref": "OGE",
+        "source": "local_knowledge;bing_imagery",
+        "train": "yes",
+        "wikidata": "Q6379805"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8572654,
+          33.7888103
+        ]
+      },
+      "id": "node/1842116070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1842117493",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Fullerton Transportation Center",
+        "public_transport": "station",
+        "source": "https://octa.net/ebusbook/RoutePDF/Routes_Serving_Stations.pdf",
+        "source_ref": "vvvexp97"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9226448,
+          33.8697879
+        ]
+      },
+      "id": "node/1842117493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1842124612",
+        "name": "Commerce",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:148.3",
+        "source": "local_knowledge;bing_imagery",
+        "train": "yes",
+        "wikidata": "Q5152406"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1439142,
+          33.9906856
+        ]
+      },
+      "id": "node/1842124612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864977227",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Disneyland Hotel Bus Stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.926728,
+          33.8096473
+        ]
+      },
+      "id": "node/1864977227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1866577830",
+        "light_rail": "yes",
+        "name": "San Pedro Street",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q2843190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2559563,
+          34.0270236
+        ]
+      },
+      "id": "node/1866577830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1866577837",
+        "alt_name": "Grand/Los Angeles Trade-Technical College",
+        "light_rail": "yes",
+        "name": "Grand/LATTC",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5594219"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2692364,
+          34.0331172
+        ]
+      },
+      "id": "node/1866577837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1982618091",
+        "light_rail": "yes",
+        "name": "Downtown Santa Monica",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q5148685"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4916499,
+          34.0136604
+        ]
+      },
+      "id": "node/1982618091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2111825503",
+        "amenity": "ferry_terminal",
+        "barrier": "gate",
+        "ferry": "yes",
+        "name": "Rafts to Tom Sawyer Island",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.921319,
+          33.8119554
+        ]
+      },
+      "id": "node/2111825503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2118852163",
+        "alt_name": "Disneyland Monorail",
+        "attraction": "train",
+        "historic": "monument",
+        "layer": "1",
+        "name": "Tomorrowland Monorail Station",
+        "note": "The final departing monorail leaves at exactly park closing. Please be at station before closing to board final monorail for a one-way trip to Downtown Disney Station.",
+        "note:historic": "First Daily operating monorail-type rail system to open in the entire Western Hemisphere",
+        "public_transport": "station",
+        "railway": "station",
+        "tourism": "attraction",
+        "website": "https://disneyland.disney.go.com/attractions/disneyland/disneyland-monorail/",
+        "wikidata": "Q3030502"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.916671,
+          33.812807
+        ]
+      },
+      "id": "node/2118852163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2191859954",
+        "light_rail": "yes",
+        "name": "Pacific Avenue",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q196297",
+        "wikipedia": "en:Pacific Avenue station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1937561,
+          33.7723341
+        ]
+      },
+      "id": "node/2191859954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2193435036",
+        "light_rail": "yes",
+        "name": "Jefferson/USC",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q196555"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2781224,
+          34.02213
+        ]
+      },
+      "id": "node/2193435036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2193435039",
+        "alt_name": "23rd Street",
+        "light_rail": "yes",
+        "name": "LATTC/Ortho Institute",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q196320"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2735701,
+          34.0291645
+        ]
+      },
+      "id": "node/2193435039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2193435054",
+        "light_rail": "yes",
+        "name": "Expo Park/USC",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q1953496",
+        "wikipedia": "en:Expo Park/USC station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2856994,
+          34.0182377
+        ]
+      },
+      "id": "node/2193435054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199119185",
+        "light_rail": "yes",
+        "name": "Pacific Coast Highway",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q7122368"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1893842,
+          33.7894805
+        ]
+      },
+      "id": "node/2199119185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199120096",
+        "light_rail": "yes",
+        "name": "Anaheim Street",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q196250"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1893846,
+          33.7819667
+        ]
+      },
+      "id": "node/2199120096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199125063",
+        "light_rail": "yes",
+        "name": "Willow Street",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q8022258"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1896702,
+          33.8066989
+        ]
+      },
+      "id": "node/2199125063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199126673",
+        "light_rail": "yes",
+        "name": "Wardlow",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q7969186"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1960776,
+          33.8198514
+        ]
+      },
+      "id": "node/2199126673"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199130070",
+        "light_rail": "yes",
+        "name": "Del Amo",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5252858"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2108753,
+          33.8478836
+        ]
+      },
+      "id": "node/2199130070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199131544",
+        "light_rail": "yes",
+        "name": "Artesia",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4797569"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2226455,
+          33.8764403
+        ]
+      },
+      "id": "node/2199131544"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199132880",
+        "light_rail": "yes",
+        "name": "Compton",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5157140"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2243044,
+          33.8979265
+        ]
+      },
+      "id": "node/2199132880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199135465",
+        "light_rail": "yes",
+        "name": "103rd Street/Watts Towers",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q3093720"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.243168,
+          33.942642
+        ]
+      },
+      "id": "node/2199135465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199138199",
+        "light_rail": "yes",
+        "name": "Firestone",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5451973"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2432163,
+          33.959948
+        ]
+      },
+      "id": "node/2199138199"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199138632",
+        "light_rail": "yes",
+        "name": "Florence",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q2839325"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2432856,
+          33.9741588
+        ]
+      },
+      "id": "node/2199138632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199139027",
+        "light_rail": "yes",
+        "name": "Slauson",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q7539085"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2434203,
+          33.9891467
+        ]
+      },
+      "id": "node/2199139027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199139750",
+        "light_rail": "yes",
+        "name": "Vernon",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q2919448"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2433076,
+          34.0033442
+        ]
+      },
+      "id": "node/2199139750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199140368",
+        "light_rail": "yes",
+        "name": "Washington",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q773030"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2430755,
+          34.0200544
+        ]
+      },
+      "id": "node/2199140368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2199141362",
+        "light_rail": "yes",
+        "name": "Pico",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4383334"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2661915,
+          34.0406717
+        ]
+      },
+      "id": "node/2199141362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2634394226",
+        "aerialway": "station",
+        "aerialway:access": "exit",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0362402,
+          34.2043308
+        ]
+      },
+      "id": "node/2634394226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2634437295",
+        "aerialway": "station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.609359,
+          34.2709279
+        ]
+      },
+      "id": "node/2634437295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2757492432",
+        "light_rail": "yes",
+        "name": "17th Street/SMC",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q5148684"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.480379,
+          34.0231598
+        ]
+      },
+      "id": "node/2757492432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2757576502",
+        "internet_access": "no",
+        "light_rail": "yes",
+        "name": "Duarte/City of Hope",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5310424"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.967501,
+          34.1325154
+        ]
+      },
+      "id": "node/2757576502"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2757582953",
+        "light_rail": "yes",
+        "name": "Azusa Downtown",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4833120"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9067015,
+          34.1359172
+        ]
+      },
+      "id": "node/2757582953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2995001228",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Aviation/Imperial Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.376728,
+          33.92937
+        ]
+      },
+      "id": "node/2995001228"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3103417729",
+        "amenity": "ferry_terminal",
+        "barrier": "gate",
+        "ferry": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.921562,
+          33.8117408
+        ]
+      },
+      "id": "node/3103417729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3123918253",
+        "addr:city": "Irwindale",
+        "addr:housenumber": "16017",
+        "addr:postcode": "91702-3221",
+        "addr:state": "CA",
+        "addr:street": "Avenida Padilla",
+        "light_rail": "yes",
+        "name": "Irwindale",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "website": "https://metro.net",
+        "wheelchair": "yes",
+        "wikidata": "Q6075160",
+        "wikipedia": "en: Irwindale station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9333393,
+          34.128813
+        ]
+      },
+      "id": "node/3123918253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3176155735",
+        "light_rail": "yes",
+        "name": "APU/Citrus College",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4833119"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8908309,
+          34.1371127
+        ]
+      },
+      "id": "node/3176155735"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3181671981",
+        "light_rail": "yes",
+        "name": "Expo/Sepulveda",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q5421457"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4341435,
+          34.0354335
+        ]
+      },
+      "id": "node/3181671981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3181671982",
+        "light_rail": "yes",
+        "name": "Expo/Bundy",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q5421454"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4531105,
+          34.0316631
+        ]
+      },
+      "id": "node/3181671982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3238564370",
+        "light_rail": "yes",
+        "name": "Monrovia",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q6902437"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0034453,
+          34.1331459
+        ]
+      },
+      "id": "node/3238564370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3712379692",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Newport Transportation Center",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.868053,
+          33.6144474
+        ]
+      },
+      "id": "node/3712379692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3856098273",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chaffey College",
+        "operator": "Omnitrans",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.5691249,
+          34.1483195
+        ]
+      },
+      "id": "node/3856098273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3986974002",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Frontierland Landing",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9206848,
+          33.812257
+        ]
+      },
+      "id": "node/3986974002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4011567236",
+        "name": "Downtown Perris",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:83.1",
+        "toilets": "no",
+        "train": "yes",
+        "website": "https://metrolinktrains.com/rider-info/general-info/stations/perris---downtown/",
+        "wikidata": "Q23016790"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2293783,
+          33.7826805
+        ]
+      },
+      "id": "node/4011567236"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4028474224",
+        "name": "Riverside–Hunter Park/UCR",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:66.1",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q23058661"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3345076,
+          33.9986708
+        ]
+      },
+      "id": "node/4028474224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4127401965",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Downtown Burbank Station",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.312026,
+          34.1780468
+        ]
+      },
+      "id": "node/4127401965"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4183858169",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.998502,
+          33.9451854
+        ]
+      },
+      "id": "node/4183858169"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4223826794",
+        "addr:housenumber": "5091",
+        "addr:street": "Richton Street",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Montclair Transit Center",
+        "operator": "Foothill Transit, Omnitrans",
+        "public_transport": "station",
+        "wikidata": "Q6904609"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6961955,
+          34.09459
+        ]
+      },
+      "id": "node/4223826794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4400281320",
+        "light_rail": "yes",
+        "name": "Expo/Western",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q1953506"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3087112,
+          34.0182911
+        ]
+      },
+      "id": "node/4400281320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4400281321",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "3630",
+        "addr:postcode": "90016",
+        "addr:state": "CA",
+        "addr:street": "South Crenshaw Boulevard",
+        "light_rail": "yes",
+        "name": "Expo/Crenshaw",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "network:wikipedia": "en:Los Angeles Metro Rail",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "operator:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "owner": "Los Angeles County Metropolitan Transportation Authority",
+        "owner:wikidata": "Q3259702",
+        "owner:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q1953847",
+        "wikipedia": "en:Expo/Crenshaw station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33485,
+          34.0219818
+        ]
+      },
+      "id": "node/4400281321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4400281325",
+        "light_rail": "yes",
+        "name": "Expo/Vermont",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5421462",
+        "wikipedia": "en:Expo/Vermont station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2917403,
+          34.01825
+        ]
+      },
+      "id": "node/4400281325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4400281326",
+        "light_rail": "yes",
+        "name": "Farmdale",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q2092077"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3462035,
+          34.0238958
+        ]
+      },
+      "id": "node/4400281326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4455724583",
+        "addr:city": "El Monte",
+        "addr:housenumber": "3501",
+        "addr:postcode": "91731",
+        "addr:state": "CA",
+        "addr:street": "Santa Anita Avenue",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "El Monte",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0440557,
+          34.0722249
+        ]
+      },
+      "id": "node/4455724583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4562427747",
+        "name": "Piru",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.793347,
+          34.41493
+        ]
+      },
+      "id": "node/4562427747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4562427748",
+        "name": "Fillmore",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.9109,
+          34.3988812
+        ]
+      },
+      "id": "node/4562427748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4937918561",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Carnegie",
+        "network": "Omnitrans",
+        "network:wikidata": "Q7090404",
+        "operator": "Omnitrans",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.270809,
+          34.0658558
+        ]
+      },
+      "id": "node/4937918561"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4965511226",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Hunts",
+        "operator": "Omnitrans",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2885012,
+          34.0658664
+        ]
+      },
+      "id": "node/4965511226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4974529823",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pico/Rimpau Transit Center",
+        "network": "Metro Local;Metro Rapid;Big Blue Bus",
+        "operator": "Metro;Big Blue Bus",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.337764,
+          34.048084
+        ]
+      },
+      "id": "node/4974529823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5107591624",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.870024,
+          34.2717681
+        ]
+      },
+      "id": "node/5107591624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5278606534",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Foothill Transit 187",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0055374,
+          34.1402803
+        ]
+      },
+      "id": "node/5278606534"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5292403526",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "McBean Regional Transit Station (MRTC)",
+        "operator": "Santa Clarita Transit",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.562322,
+          34.4140814
+        ]
+      },
+      "id": "node/5292403526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360527586",
+        "light_rail": "yes",
+        "name": "Redondo Beach",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4383242"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3689778,
+          33.8945006
+        ]
+      },
+      "id": "node/5360527586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360530767",
+        "light_rail": "yes",
+        "name": "Douglas",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5301170"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3829334,
+          33.9051265
+        ]
+      },
+      "id": "node/5360530767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360533318",
+        "light_rail": "yes",
+        "name": "El Segundo",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5352134"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3867319,
+          33.9162001
+        ]
+      },
+      "id": "node/5360533318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360540476",
+        "light_rail": "yes",
+        "name": "Mariposa",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q10748197"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.387579,
+          33.9232168
+        ]
+      },
+      "id": "node/5360540476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360547375",
+        "light_rail": "yes",
+        "name": "Hawthorne/Lennox",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q196302"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3519756,
+          33.9335004
+        ]
+      },
+      "id": "node/5360547375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360549248",
+        "light_rail": "yes",
+        "name": "Crenshaw",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5184167",
+        "wikipedia": "en:Crenshaw station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3265295,
+          33.9252122
+        ]
+      },
+      "id": "node/5360549248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360549737",
+        "addr:housenumber": "11603",
+        "addr:state": "CA",
+        "addr:street": "Vermont Avenue",
+        "light_rail": "yes",
+        "name": "Vermont/Athens",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q196104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2918683,
+          33.9286905
+        ]
+      },
+      "id": "node/5360549737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360553490",
+        "light_rail": "yes",
+        "name": "Harbor Freeway",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4798048"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2812626,
+          33.9287193
+        ]
+      },
+      "id": "node/5360553490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360555156",
+        "light_rail": "yes",
+        "name": "Avalon",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4827552"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2652233,
+          33.9274857
+        ]
+      },
+      "id": "node/5360555156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360566257",
+        "light_rail": "yes",
+        "name": "Willowbrook/Rosa Parks",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4383187",
+        "wikipedia": "en:Willowbrook/Rosa Parks station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.238374,
+          33.9282894
+        ]
+      },
+      "id": "node/5360566257"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360571297",
+        "light_rail": "yes",
+        "name": "Lynwood",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "subway": "yes",
+        "wikidata": "Q195885"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.209968,
+          33.9248873
+        ]
+      },
+      "id": "node/5360571297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360574904",
+        "light_rail": "yes",
+        "name": "Lakewood Boulevard",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4687071"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1406419,
+          33.9130799
+        ]
+      },
+      "id": "node/5360574904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5360575853",
+        "light_rail": "yes",
+        "name": "Norwalk",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q944027"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1046324,
+          33.9140388
+        ]
+      },
+      "id": "node/5360575853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362648027",
+        "light_rail": "yes",
+        "name": "Union Station",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q6156267"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2347667,
+          34.055915
+        ]
+      },
+      "id": "node/5362648027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362680709",
+        "light_rail": "yes",
+        "name": "Maravilla",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "subway": "yes",
+        "wikidata": "Q10748806",
+        "wikipedia": "en:Maravilla station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1681507,
+          34.0332976
+        ]
+      },
+      "id": "node/5362680709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362685533",
+        "air_conditioning": "no",
+        "light_rail": "yes",
+        "name": "Chinatown",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q4383195"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.235871,
+          34.0637846
+        ]
+      },
+      "id": "node/5362685533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362688644",
+        "light_rail": "yes",
+        "name": "Mariachi Plaza",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q6761739"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2190832,
+          34.0474812
+        ]
+      },
+      "id": "node/5362688644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362690788",
+        "light_rail": "yes",
+        "name": "Lincoln/Cypress",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q195903"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2207106,
+          34.0807497
+        ]
+      },
+      "id": "node/5362690788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362695803",
+        "light_rail": "yes",
+        "name": "Atlantic",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "subway": "yes",
+        "wikidata": "Q4816264"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1545923,
+          34.0334012
+        ]
+      },
+      "id": "node/5362695803"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362697076",
+        "light_rail": "yes",
+        "name": "East LA Civic Center",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "subway": "yes",
+        "wikidata": "Q5328758"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.161215,
+          34.0333643
+        ]
+      },
+      "id": "node/5362697076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362705395",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "210",
+        "addr:postcode": "90063",
+        "addr:state": "CA",
+        "addr:street": "South Indiana Street",
+        "light_rail": "yes",
+        "name": "Indiana",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "subway": "yes",
+        "wikidata": "Q9008332"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1921717,
+          34.0342673
+        ]
+      },
+      "id": "node/5362705395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362711318",
+        "light_rail": "yes",
+        "name": "Soto",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "subway": "yes",
+        "wikidata": "Q5551432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2102316,
+          34.0436132
+        ]
+      },
+      "id": "node/5362711318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362716662",
+        "light_rail": "yes",
+        "name": "Heritage Square",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q5739086"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2132887,
+          34.087127
+        ]
+      },
+      "id": "node/5362716662"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362718466",
+        "light_rail": "yes",
+        "name": "Southwest Museum",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q7571327"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2066457,
+          34.0982784
+        ]
+      },
+      "id": "node/5362718466"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362718618",
+        "light_rail": "yes",
+        "name": "Highland Park",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q302054"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1925442,
+          34.1112098
+        ]
+      },
+      "id": "node/5362718618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362723249",
+        "light_rail": "yes",
+        "name": "South Pasadena",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q3018109"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1577981,
+          34.1152538
+        ]
+      },
+      "id": "node/5362723249"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362726685",
+        "light_rail": "yes",
+        "name": "Fillmore",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q5448850"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.148117,
+          34.1335508
+        ]
+      },
+      "id": "node/5362726685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362726688",
+        "light_rail": "yes",
+        "name": "Del Mar",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q5252912"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1482104,
+          34.1419849
+        ]
+      },
+      "id": "node/5362726688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362727222",
+        "light_rail": "yes",
+        "name": "Memorial Park",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4383351"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1474604,
+          34.148477
+        ]
+      },
+      "id": "node/5362727222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362729138",
+        "light_rail": "yes",
+        "name": "Allen",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4731503"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.11356,
+          34.1524415
+        ]
+      },
+      "id": "node/5362729138"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362730313",
+        "addr:city": "Pasadena",
+        "addr:housenumber": "149",
+        "addr:postcode": "91107",
+        "addr:state": "CA",
+        "addr:street": "North Halstead Street",
+        "light_rail": "yes",
+        "name": "Sierra Madre Villa",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q731367"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0814884,
+          34.1484546
+        ]
+      },
+      "id": "node/5362730313"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362732163",
+        "light_rail": "yes",
+        "name": "Arcadia",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q4785119"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0292409,
+          34.1428827
+        ]
+      },
+      "id": "node/5362732163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5362776649",
+        "light_rail": "yes",
+        "name": "Pico/Aliso",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q196262"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.226016,
+          34.0476438
+        ]
+      },
+      "id": "node/5362776649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5404056389",
+        "internet_access": "wlan",
+        "level": "-2",
+        "name": "Union Station",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "platforms": "1",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q6156267"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.234856,
+          34.056135
+        ]
+      },
+      "id": "node/5404056389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5514948721",
+        "addr:state": "CA",
+        "bus": "yes",
+        "name": "Santa Ana Regional Transportation Center",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:175.2",
+        "railway:ref": "SNA",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q3097671"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.85647,
+          33.751607
+        ]
+      },
+      "id": "node/5514948721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5732845565",
+        "addr:city": "San Bernardino",
+        "addr:housenumber": "599",
+        "addr:postcode": "92401",
+        "addr:state": "CA",
+        "addr:street": "West Rialto Avenue",
+        "air_conditioning": "yes",
+        "check_date": "2022-10-24",
+        "name": "San Bernardino–Downtown",
+        "network": "Metrolink",
+        "operator": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:57.6",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q14683861",
+        "wikipedia": "en:San Bernardino Transit Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2958883,
+          34.0997075
+        ]
+      },
+      "id": "node/5732845565"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5732845567",
+        "addr:state": "CA",
+        "ele": "325",
+        "gnis:feature_id": "1844294",
+        "name": "San Bernardino Depot",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:56.5",
+        "railway:ref": "SNB",
+        "source": "USGS Geonames",
+        "train": "yes",
+        "website": "https://www.amtrak.com/stations/snb.html",
+        "wikidata": "Q7419522",
+        "wikipedia": "en:San Bernardino Santa Fe Depot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3097869,
+          34.1042339
+        ]
+      },
+      "id": "node/5732845567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5732845594",
+        "addr:state": "CA",
+        "electrified": "no",
+        "name": "Riverside–Downtown",
+        "network": "Amtrak;Metrolink",
+        "operator": "Amtrak",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:10.3",
+        "railway:ref": "RIV",
+        "source_ref": "AM909_DSCX8301",
+        "train": "yes",
+        "website": "https://www.amtrak.com/stations/riv.html",
+        "wikidata": "Q7338417",
+        "wikipedia": "en:Riverside–Downtown station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3699636,
+          33.9756944
+        ]
+      },
+      "id": "node/5732845594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5732845616",
+        "name": "Norwalk/Santa Fe Springs",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:156.1",
+        "toilets:wheelchair": "no",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q7060773"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0598321,
+          33.9163618
+        ]
+      },
+      "id": "node/5732845616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5766831122",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Claremont Transit Center",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.7125627,
+          34.0944847
+        ]
+      },
+      "id": "node/5766831122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5788400262",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Tippecanoe",
+        "operator": "Omnitrans",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2626175,
+          34.0689827
+        ]
+      },
+      "id": "node/5788400262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5788400263",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Inland Center",
+        "operator": "Omnitrans",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.293829,
+          34.0847154
+        ]
+      },
+      "id": "node/5788400263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5807886005",
+        "addr:state": "CA",
+        "name": "Ontario",
+        "network": "Amtrak",
+        "operator": "Amtrak",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "ONA",
+        "train": "yes",
+        "website": "https://www.amtrak.com/stations/ona.html",
+        "wikidata": "Q7094586",
+        "wikipedia": "en:Ontario station (Amtrak)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6495909,
+          34.0616262
+        ]
+      },
+      "id": "node/5807886005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6064680204",
+        "name": "South Perris",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:85.3",
+        "train": "yes",
+        "wikidata": "Q23058690"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2036781,
+          33.7628245
+        ]
+      },
+      "id": "node/6064680204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6108409727",
+        "name": "East Ontario",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:42.2",
+        "train": "yes",
+        "wikidata": "Q5329075",
+        "wikipedia": "en:Ontario–East station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.5797184,
+          34.0399906
+        ]
+      },
+      "id": "node/6108409727"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6108409744",
+        "addr:state": "CA",
+        "name": "Van Nuys",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:455.1",
+        "railway:ref": "VNC",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q501786",
+        "wikipedia": "en:Van Nuys station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.446697,
+          34.2112682
+        ]
+      },
+      "id": "node/6108409744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6112185445",
+        "addr:state": "CA",
+        "name": "Simi Valley",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:438.1",
+        "railway:ref": "SIM",
+        "train": "yes",
+        "wikidata": "Q501632",
+        "wikipedia": "en:Simi Valley station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.6952338,
+          34.2701917
+        ]
+      },
+      "id": "node/6112185445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114280512",
+        "name": "Downtown Burbank",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:10.8",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q5303381"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3117659,
+          34.1786187
+        ]
+      },
+      "id": "node/6114280512"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114280516",
+        "name": "Sun Valley",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:15.4",
+        "source": "Yahoo",
+        "train": "yes",
+        "wikidata": "Q7638560",
+        "wikipedia": "en:Sun Valley station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3733472,
+          34.2223933
+        ]
+      },
+      "id": "node/6114280516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114280520",
+        "addr:city": "Sylmar",
+        "addr:country": "US",
+        "addr:housenumber": "12219",
+        "addr:postcode": "91342",
+        "addr:street": "Frank Modugno Drive",
+        "name": "Sylmar/San Fernando",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:21.9",
+        "train": "yes",
+        "wheelchair": "limited",
+        "wikidata": "Q7660589",
+        "wikipedia": "en:Sylmar/San Fernando station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.449574,
+          34.2921448
+        ]
+      },
+      "id": "node/6114280520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114280524",
+        "name": "Newhall",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:30.0",
+        "railway:ref": "NHL",
+        "source": "Yahoo",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q14683486",
+        "wikipedia": "en:Newhall station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.526912,
+          34.3793318
+        ]
+      },
+      "id": "node/6114280524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114280528",
+        "name": "Santa Clarita",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:34.2",
+        "train": "yes",
+        "wikidata": "Q7419352",
+        "wikipedia": "en:Santa Clarita station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5250277,
+          34.4137196
+        ]
+      },
+      "id": "node/6114280528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114280529",
+        "name": "Via Princessa",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:37.9",
+        "train": "yes",
+        "wikidata": "Q7924389"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4692385,
+          34.4084629
+        ]
+      },
+      "id": "node/6114280529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114280543",
+        "name": "Vincent Grade/Acton",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:61.5",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q7931823"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1182644,
+          34.4979729
+        ]
+      },
+      "id": "node/6114280543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114280545",
+        "name": "Palmdale",
+        "network": "Metrolink",
+        "operator": "City of Palmdale",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:69.2",
+        "railway:ref": "PMD",
+        "train": "yes",
+        "wikidata": "Q7128176"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1196007,
+          34.5908349
+        ]
+      },
+      "id": "node/6114280545"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114280549",
+        "name": "Lancaster",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:76.6",
+        "railway:ref": "LCS",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q14683036"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.13624,
+          34.6965916
+        ]
+      },
+      "id": "node/6114280549"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114626190",
+        "name": "Rialto",
+        "network": "Metrolink",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:52.9",
+        "train": "yes",
+        "wikidata": "Q7322134",
+        "wikipedia": "en:Rialto station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3728013,
+          34.0968867
+        ]
+      },
+      "id": "node/6114626190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114626194",
+        "name": "Fontana",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:49.1",
+        "source": "wikipedia:en",
+        "train": "yes",
+        "wikidata": "Q5465123",
+        "wikipedia": "en:Fontana station (California)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.4372067,
+          34.0952082
+        ]
+      },
+      "id": "node/6114626194"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114626200",
+        "name": "Rancho Cucamonga",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:42.1",
+        "source": "wikipedia:en",
+        "train": "yes",
+        "wikidata": "Q7290931",
+        "wikipedia": "en:Rancho Cucamonga station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.5599068,
+          34.0918446
+        ]
+      },
+      "id": "node/6114626200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114626203",
+        "name": "Upland",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:37.1",
+        "source": "wikipedia:en",
+        "train": "yes",
+        "wikidata": "Q7898338",
+        "wikipedia": "en:Upland station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6481586,
+          34.0945665
+        ]
+      },
+      "id": "node/6114626203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114626204",
+        "name": "Montclair",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:34.3",
+        "source": "wikipedia:en",
+        "train": "yes",
+        "wikidata": "Q6904609",
+        "wikipedia": "en:Montclair Transcenter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6964769,
+          34.0940897
+        ]
+      },
+      "id": "node/6114626204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114626206",
+        "name": "Claremont",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:33.1",
+        "railway:ref": "CLM",
+        "source": "wikipedia:en",
+        "train": "yes",
+        "wikidata": "Q5126297",
+        "wikipedia": "en:Claremont station (California)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.7164956,
+          34.0939798
+        ]
+      },
+      "id": "node/6114626206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114626220",
+        "light_rail": "yes",
+        "name": "Pomona–North",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:30.9",
+        "source": "wikipedia:en",
+        "train": "yes",
+        "wikidata": "Q7227377",
+        "wikipedia": "en:Pomona–North station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.7523312,
+          34.0937511
+        ]
+      },
+      "id": "node/6114626220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114626230",
+        "name": "Covina",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:23.0",
+        "train": "yes",
+        "wikidata": "Q5179328"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.889579,
+          34.0921547
+        ]
+      },
+      "id": "node/6114626230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6114626234",
+        "name": "Baldwin Park",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:18.9",
+        "source": "wikipedia:en",
+        "toilets:wheelchair": "no",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wheelchair:description": "WC usually locked. Accessible but always locked.",
+        "wikidata": "Q4850580",
+        "wikipedia": "en:Baldwin Park station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.958351,
+          34.0855516
+        ]
+      },
+      "id": "node/6114626234"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6116779769",
+        "name": "Pedley",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:49.8",
+        "source": "wikipedia:en",
+        "train": "yes",
+        "wikidata": "Q7159321",
+        "wikipedia": "en:Jurupa Valley/Pedley station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.4764507,
+          33.9786505
+        ]
+      },
+      "id": "node/6116779769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6116782286",
+        "name": "Industry",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:25.0",
+        "train": "yes",
+        "wikidata": "Q6028120"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8454453,
+          34.0080692
+        ]
+      },
+      "id": "node/6116782286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6116782292",
+        "name": "Montebello/Commerce",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:7.7",
+        "train": "yes",
+        "wikidata": "Q14683390",
+        "wikipedia": "en:Montebello/Commerce station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1261029,
+          34.0069504
+        ]
+      },
+      "id": "node/6116782292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6117543552",
+        "name": "Moreno Valley/March Field",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:73.5",
+        "train": "yes",
+        "wikidata": "Q23017252"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2883418,
+          33.9131411
+        ]
+      },
+      "id": "node/6117543552"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6117543568",
+        "name": "Riverside–La Sierra",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:18.5",
+        "train": "yes",
+        "wikidata": "Q7338645",
+        "wikipedia": "en:Riverside–La Sierra station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.4703598,
+          33.8998209
+        ]
+      },
+      "id": "node/6117543568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6117543572",
+        "name": "Corona–West",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:26.9",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q7984881",
+        "wikipedia": "en:Corona–West station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6133004,
+          33.8857503
+        ]
+      },
+      "id": "node/6117543572"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6117543689",
+        "name": "Buena Park",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "platforms": "2",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:161.2",
+        "train": "yes",
+        "wikidata": "Q4985402"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9888806,
+          33.8762034
+        ]
+      },
+      "id": "node/6117543689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6117698053",
+        "addr:state": "CA",
+        "name": "San Clemente Pier",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:204.8",
+        "railway:ref": "SNP",
+        "source": "local_knowledge;bing_imagery",
+        "train": "yes",
+        "wikidata": "Q3097661"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6197402,
+          33.4196071
+        ]
+      },
+      "id": "node/6117698053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6117698054",
+        "addr:city": "San Clemente",
+        "addr:housenumber": "1850",
+        "addr:postcode": "92672",
+        "addr:state": "CA",
+        "addr:street": "Avenida Estacion",
+        "name": "San Clemente",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:203.6",
+        "railway:ref": "SNT",
+        "source": "yahoo_imagery;survey;image",
+        "source_ref": "AM909_DSCU2457",
+        "train": "yes",
+        "wikidata": "Q7413545"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.633021,
+          33.4321749
+        ]
+      },
+      "id": "node/6117698054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6117698056",
+        "addr:state": "CA",
+        "name": "San Juan Capistrano",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:197.2",
+        "railway:ref": "SNC",
+        "source": "local_knowledge;bing_imagery",
+        "train": "yes",
+        "wikidata": "Q501637"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6639175,
+          33.501549
+        ]
+      },
+      "id": "node/6117698056"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6117698058",
+        "addr:city": "Laguna Niguel",
+        "addr:housenumber": "28200",
+        "addr:postcode": "92677",
+        "addr:state": "CA",
+        "addr:street": "Forbes Road",
+        "name": "Laguna Niguel/Mission Viejo",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:193.5",
+        "railway:ref": "LNL",
+        "source": "local_knowledge;bing_imagery",
+        "train": "yes",
+        "wikidata": "Q6472908"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6741331,
+          33.5528472
+        ]
+      },
+      "id": "node/6117698058"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6120572342",
+        "air_conditioning": "no",
+        "internet_access": "no",
+        "name": "Burbank Airport–North",
+        "network": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q16255019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3499324,
+          34.2062657
+        ]
+      },
+      "id": "node/6120572342"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6135688782",
+        "name": "Civic Center/Grand Park",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q5919757"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2460939,
+          34.0548968
+        ]
+      },
+      "id": "node/6135688782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6146719493",
+        "name": "Northridge",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:449.3",
+        "source": "Yahoo",
+        "train": "yes",
+        "wikidata": "Q7059638",
+        "wikipedia": "en:Northridge station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5451455,
+          34.2304561
+        ]
+      },
+      "id": "node/6146719493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6146719496",
+        "addr:city": "Chatsworth",
+        "addr:housenumber": "10046",
+        "addr:postcode": "91311",
+        "addr:state": "CA",
+        "addr:street": "Old Depot Plaza Road",
+        "internet_access": "wlan",
+        "name": "Chatsworth",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:445.5",
+        "railway:ref": "CWT",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q3096208",
+        "wikipedia": "en:Chatsworth station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.599297,
+          34.2529333
+        ]
+      },
+      "id": "node/6146719496"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6146719503",
+        "addr:state": "CA",
+        "name": "Camarillo",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:413.1",
+        "railway:ref": "CML",
+        "train": "yes",
+        "wikidata": "Q501896",
+        "wikipedia": "en:Camarillo station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.034073,
+          34.215808
+        ]
+      },
+      "id": "node/6146719503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6146719504",
+        "addr:state": "CA",
+        "name": "Oxnard",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:404.3",
+        "railway:ref": "OXN",
+        "train": "yes",
+        "wikidata": "Q501648",
+        "wikipedia": "en:Oxnard Transit Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1760976,
+          34.1994386
+        ]
+      },
+      "id": "node/6146719504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6150539714",
+        "air_conditioning": "no",
+        "internet_access": "no",
+        "name": "East Ventura",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:403.3",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q5329601",
+        "wikipedia": "en:Ventura–East station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.203154,
+          34.2507076
+        ]
+      },
+      "id": "node/6150539714"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6150863823",
+        "name": "Claremont",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:33.1",
+        "railway:ref": "CLM",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.7169207,
+          34.0939597
+        ]
+      },
+      "id": "node/6150863823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6150863826",
+        "name": "Pomona–North",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:30.9",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.7549306,
+          34.093704
+        ]
+      },
+      "id": "node/6150863826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6150863832",
+        "addr:city": "El Monte",
+        "addr:housenumber": "10925",
+        "addr:postcode": "91731",
+        "addr:state": "CA",
+        "addr:street": "Railroad Street",
+        "name": "El Monte",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:12.6",
+        "train": "yes",
+        "wikidata": "Q5351630"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0356503,
+          34.0767365
+        ]
+      },
+      "id": "node/6150863832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6150863836",
+        "name": "Cal State LA",
+        "network": "Metrolink;LACMTA",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:4.6",
+        "train": "yes",
+        "wikidata": "Q502211"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1684408,
+          34.062686
+        ]
+      },
+      "id": "node/6150863836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928839",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Canoga",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5963111,
+          34.1907428
+        ]
+      },
+      "id": "node/6204928839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928840",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "De Soto",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q5244752"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5882892,
+          34.18857
+        ]
+      },
+      "id": "node/6204928840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928841",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Woodman/Valley Glen",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4300098,
+          34.1792742
+        ]
+      },
+      "id": "node/6204928841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928843",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Reseda",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7315192"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5358379,
+          34.1803026
+        ]
+      },
+      "id": "node/6204928843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928845",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Laurel Canyon",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q6499768"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3962958,
+          34.1684654
+        ]
+      },
+      "id": "node/6204928845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928851",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Sepulveda",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7452394"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46888,
+          34.1807806
+        ]
+      },
+      "id": "node/6204928851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928852",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Balboa",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q4850196"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5005523,
+          34.1859232
+        ]
+      },
+      "id": "node/6204928852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928853",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Woodley",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q8033054"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4833939,
+          34.1861699
+        ]
+      },
+      "id": "node/6204928853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928854",
+        "addr:city": "Van Nuys",
+        "addr:state": "CA",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Van Nuys",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7913554"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4484811,
+          34.1804911
+        ]
+      },
+      "id": "node/6204928854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928855",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Valley College",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7912015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.422275,
+          34.171854
+        ]
+      },
+      "id": "node/6204928855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928857",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Sherman Way",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7495266"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5972,
+          34.2006897
+        ]
+      },
+      "id": "node/6204928857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204928858",
+        "air_conditioning": "no",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chatsworth",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "wikidata": "Q3096208",
+        "wikipedia": "en:Chatsworth station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.599387,
+          34.2521925
+        ]
+      },
+      "id": "node/6204928858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204929252",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Tampa",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7681665"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.553441,
+          34.1812169
+        ]
+      },
+      "id": "node/6204929252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204929283",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pierce College",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7191781"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5708038,
+          34.1870312
+        ]
+      },
+      "id": "node/6204929283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204929284",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Roscoe",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7367488",
+        "wikipedia": "en:Roscoe station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5972991,
+          34.2195479
+        ]
+      },
+      "id": "node/6204929284"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204929385",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Nordhoff",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7050651",
+        "wikipedia": "en:Nordhoff station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5973267,
+          34.2353003
+        ]
+      },
+      "id": "node/6204929385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6206425599",
+        "addr:street": "El Monte Busway",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "LA General Medical Center",
+        "public_transport": "station",
+        "route_ref": "910,950,487"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.210441,
+          34.0553927
+        ]
+      },
+      "id": "node/6206425599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6206425640",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Slauson",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.280515,
+          33.9890113
+        ]
+      },
+      "id": "node/6206425640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6206425641",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Manchester",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.280835,
+          33.9600846
+        ]
+      },
+      "id": "node/6206425641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6206425642",
+        "bus": "yes",
+        "name": "Rosecrans",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7368130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2866313,
+          33.9017758
+        ]
+      },
+      "id": "node/6206425642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6206425701",
+        "bus": "yes",
+        "name": "37th Street/USC",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q4635922"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.280109,
+          34.0177803
+        ]
+      },
+      "id": "node/6206425701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6206425719",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Harbor Gateway Transit Center",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2874428,
+          33.8693007
+        ]
+      },
+      "id": "node/6206425719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6215060982",
+        "name": "Wilshire/Vermont",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q195901"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2906103,
+          34.0626617
+        ]
+      },
+      "id": "node/6215060982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6215061051",
+        "light_rail": "yes",
+        "location": "underground",
+        "name": "Grand Avenue Arts/Bunker Hill",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q30623948"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.251427,
+          34.0549665
+        ]
+      },
+      "id": "node/6215061051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648786",
+        "name": "Wilshire/Normandie",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q195882"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3009228,
+          34.0614318
+        ]
+      },
+      "id": "node/6217648786"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648787",
+        "air_conditioning": "no",
+        "internet_access": "yes",
+        "name": "Vermont/Sunset",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q196108"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.291557,
+          34.0983459
+        ]
+      },
+      "id": "node/6217648787"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648788",
+        "name": "Hollywood/Western",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q196293"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3090574,
+          34.1015578
+        ]
+      },
+      "id": "node/6217648788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648789",
+        "name": "Vermont/Beverly",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q196111"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2919583,
+          34.0766342
+        ]
+      },
+      "id": "node/6217648789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648790",
+        "name": "Wilshire/Western",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q196268"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3088618,
+          34.0621149
+        ]
+      },
+      "id": "node/6217648790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648791",
+        "name": "Westlake/MacArthur Park",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q2690377"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2754786,
+          34.05674
+        ]
+      },
+      "id": "node/6217648791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648792",
+        "name": "Hollywood/Vine",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q196289"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3257421,
+          34.1014183
+        ]
+      },
+      "id": "node/6217648792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648793",
+        "air_conditioning": "yes",
+        "internet_access": "wlan",
+        "name": "Universal City/Studio City",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q4383340"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.362359,
+          34.1393585
+        ]
+      },
+      "id": "node/6217648793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648794",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "6801",
+        "addr:postcode": "90028",
+        "addr:state": "CA",
+        "addr:street": "Hollywood Boulevard",
+        "air_conditioning": "yes",
+        "internet_access": "wlan",
+        "name": "Hollywood/Highland",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q196224"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.339251,
+          34.1017097
+        ]
+      },
+      "id": "node/6217648794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6217648795",
+        "name": "Vermont/Santa Monica",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q2690361"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.292044,
+          34.090641
+        ]
+      },
+      "id": "node/6217648795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6219631004",
+        "check_date": "2023-06-15",
+        "light_rail": "yes",
+        "location": "underground",
+        "name": "Historic Broadway",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2023-06-16",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q30623952"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.246531,
+          34.0520767
+        ]
+      },
+      "id": "node/6219631004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6228683764",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Civic Center",
+        "operator": "Omnitrans",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2941509,
+          34.1052718
+        ]
+      },
+      "id": "node/6228683764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6308791047",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Pacific Coast Highway",
+        "network": "J Line",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.282054,
+          33.79053
+        ]
+      },
+      "id": "node/6308791047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6308791560",
+        "bus": "yes",
+        "name": "Carson",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.287402,
+          33.8315917
+        ]
+      },
+      "id": "node/6308791560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6511816877",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Lorene & 7th Transfer Center",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.318709,
+          34.5144205
+        ]
+      },
+      "id": "node/6511816877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7057390052",
+        "addr:city": "Redlands",
+        "addr:housenumber": "1100",
+        "addr:postcode": "92374",
+        "addr:state": "CA",
+        "addr:street": "East Park Avenue",
+        "check_date": "2022-10-24",
+        "name": "Redlands–University",
+        "network": "Metrolink",
+        "operator": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-10-24",
+        "wikidata": "Q85812330",
+        "wikipedia": "en:Redlands–University station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.16576,
+          34.0589457
+        ]
+      },
+      "id": "node/7057390052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7057390053",
+        "addr:city": "Redlands",
+        "addr:housenumber": "351",
+        "addr:postcode": "92374",
+        "addr:state": "CA",
+        "addr:street": "North Orange Street",
+        "check_date": "2022-10-24",
+        "name": "Redlands–Downtown",
+        "network": "Metrolink",
+        "operator": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-10-24",
+        "wikidata": "Q96401417",
+        "wikipedia": "en:Redlands–Downtown station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.183237,
+          34.0588496
+        ]
+      },
+      "id": "node/7057390053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7057390054",
+        "addr:city": "Redlands",
+        "addr:housenumber": "601",
+        "addr:postcode": "92374",
+        "addr:state": "CA",
+        "addr:street": "New York Street",
+        "check_date": "2022-10-24",
+        "name": "Redlands–Esri",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-10-24",
+        "train": "yes",
+        "wikidata": "Q96377405",
+        "wikipedia": "en:Redlands–Esri station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.196434,
+          34.0599782
+        ]
+      },
+      "id": "node/7057390054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7057390055",
+        "addr:city": "San Bernardino",
+        "addr:housenumber": "1498",
+        "addr:postcode": "92408",
+        "addr:state": "CA",
+        "addr:street": "South Tippecanoe Avenue",
+        "check_date": "2022-10-24",
+        "name": "San Bernardino–Tippecanoe",
+        "network": "Metrolink",
+        "operator": "Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-10-24",
+        "train": "yes",
+        "wikidata": "Q39047709",
+        "wikipedia": "en:San Bernardino–Tippecanoe station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.260534,
+          34.0736366
+        ]
+      },
+      "id": "node/7057390055"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7065480880",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Downtown Burbank Station",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3124648,
+          34.1788622
+        ]
+      },
+      "id": "node/7065480880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7321294011",
+        "addr:city": "Inglewood",
+        "addr:housenumber": "1040",
+        "addr:postcode": "90301",
+        "addr:state": "CA",
+        "addr:street": "West Florence Avenue",
+        "light_rail": "yes",
+        "name": "Westchester/Veterans",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "network:wikipedia": "en:Los Angeles Metro Rail",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "operator:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "owner": "Los Angeles County Metropolitan Transportation Authority",
+        "owner:wikidata": "Q3259702",
+        "owner:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q16975762",
+        "wikipedia": "en:Westchester/Veterans station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.374567,
+          33.961979
+        ]
+      },
+      "id": "node/7321294011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7321294012",
+        "addr:city": "Inglewood",
+        "addr:housenumber": "321",
+        "addr:postcode": "90301",
+        "addr:state": "CA",
+        "addr:street": "East Florence Avenue",
+        "light_rail": "yes",
+        "name": "Downtown Inglewood",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "network:wikipedia": "en:Los Angeles Metro Rail",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "operator:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "owner": "Los Angeles County Metropolitan Transportation Authority",
+        "owner:wikidata": "Q3259702",
+        "owner:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q16974837",
+        "wikipedia": "en:Downtown Inglewood station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.351423,
+          33.9672685
+        ]
+      },
+      "id": "node/7321294012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7321294013",
+        "addr:city": "Inglewood",
+        "addr:housenumber": "1130",
+        "addr:postcode": "90302",
+        "addr:state": "CA",
+        "addr:street": "East Redondo Boulevard",
+        "light_rail": "yes",
+        "name": "Fairview Heights",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "network:wikipedia": "en:Los Angeles Metro Rail",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "operator:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "owner": "Los Angeles County Metropolitan Transportation Authority",
+        "owner:wikidata": "Q3259702",
+        "owner:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-10-07",
+        "station": "light_rail",
+        "wikidata": "Q16974841",
+        "wikipedia": "en:Fairview Heights station (Los Angeles Metro)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.336272,
+          33.9751834
+        ]
+      },
+      "id": "node/7321294013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7321294016",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "5835",
+        "addr:postcode": "90043",
+        "addr:state": "CA",
+        "addr:street": "South Crenshaw Boulevard",
+        "light_rail": "yes",
+        "name": "Hyde Park",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "network:wikipedia": "en:Los Angeles Metro Rail",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "operator:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "owner": "Los Angeles County Metropolitan Transportation Authority",
+        "owner:wikidata": "Q3259702",
+        "owner:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q16974343",
+        "wikipedia": "en:Hyde Park station (Los Angeles Metro)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.330841,
+          33.9883602
+        ]
+      },
+      "id": "node/7321294016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7321294017",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "4330",
+        "addr:postcode": "90008",
+        "addr:state": "CA",
+        "addr:street": "South Crenshaw Boulevard",
+        "light_rail": "yes",
+        "name": "Leimert Park",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "network:wikipedia": "en:Los Angeles Metro Rail",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "operator:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "owner": "Los Angeles County Metropolitan Transportation Authority",
+        "owner:wikidata": "Q3259702",
+        "owner:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-10-07",
+        "station": "light_rail",
+        "wikidata": "Q16981163",
+        "wikipedia": "en:Leimert Park station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.332669,
+          34.0046294
+        ]
+      },
+      "id": "node/7321294017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7321294018",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "4051",
+        "addr:postcode": "90008",
+        "addr:state": "CA",
+        "addr:street": "South Crenshaw Boulevard",
+        "light_rail": "yes",
+        "name": "Martin Luther King Jr.",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "network:wikipedia": "en:Los Angeles Metro Rail",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "operator:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "owner": "Los Angeles County Metropolitan Transportation Authority",
+        "owner:wikidata": "Q3259702",
+        "owner:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q16974341",
+        "wikipedia": "en:Martin Luther King Jr. station (Los Angeles Metro)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3353753,
+          34.0102787
+        ]
+      },
+      "id": "node/7321294018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7342759373",
+        "name": "Swinford Street/Cruise Center",
+        "public_transport": "station",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2800219,
+          33.7482864
+        ]
+      },
+      "id": "node/7342759373"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7365824840",
+        "check_date": "2023-06-15",
+        "name": "Little Tokyo/Arts District",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2023-06-16",
+        "station": "light_rail",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q2689926"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.238748,
+          34.0488626
+        ]
+      },
+      "id": "node/7365824840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7722249419",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Cal State LA",
+        "network": "LACMTA",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "wikidata": "Q502211"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1680073,
+          34.0628744
+        ]
+      },
+      "id": "node/7722249419"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7771750930",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9958613,
+          33.9443803
+        ]
+      },
+      "id": "node/7771750930"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7995873700",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0607242,
+          33.9165228
+        ]
+      },
+      "id": "node/7995873700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8122573042",
+        "addr:city": "Glendale",
+        "addr:country": "US",
+        "addr:housenumber": "440",
+        "addr:state": "CA",
+        "addr:street": "West Cerritos Avenue",
+        "name": "Glendale",
+        "network": "Amtrak;Metrolink",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:5.8",
+        "railway:ref": "GDL",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q501640"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.259173,
+          34.1235724
+        ]
+      },
+      "id": "node/8122573042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8498373369",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Harbor Freeway",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q4798048"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.280784,
+          33.9287158
+        ]
+      },
+      "id": "node/8498373369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8498373370",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "North Hollywood",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q7055656"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3764071,
+          34.1687979
+        ]
+      },
+      "id": "node/8498373370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8498373371",
+        "name": "North Hollywood",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "no",
+        "wikidata": "Q7055656"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3766314,
+          34.168894
+        ]
+      },
+      "id": "node/8498373371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9288941037",
+        "addr:city": "Compton",
+        "addr:housenumber": "15103",
+        "addr:postcode": "90221",
+        "addr:state": "CA",
+        "addr:street": "Atlantic Avenue",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "fixme": "Unsure of how to tag this.",
+        "name": "Fronteras Del Norte",
+        "public_transport": "station",
+        "website": "https://travelfronteras.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1939923,
+          33.8957144
+        ]
+      },
+      "id": "node/9288941037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9380768632",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Woodley",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "wikidata": "Q8033054"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4839562,
+          34.1863318
+        ]
+      },
+      "id": "node/9380768632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9407861901",
+        "aerialway": "station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0346593,
+          34.2203953
+        ]
+      },
+      "id": "node/9407861901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9407861902",
+        "aerialway": "station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0347735,
+          34.2118194
+        ]
+      },
+      "id": "node/9407861902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9432444875",
+        "addr:city": "Fontana",
+        "addr:housenumber": "16056",
+        "addr:postcode": "92335",
+        "addr:state": "CA",
+        "addr:street": "Valley Boulevard",
+        "addr:unit": "D",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "description": "Fontana Ticket office",
+        "name": "Fontana - El Corre Caminos",
+        "network": "El Corre Caminos",
+        "operator": "El Corre Caminos",
+        "phone": "+1-909-428-8513",
+        "public_transport": "station",
+        "website": "https://elcorrecaminos.com/fontana/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.454733,
+          34.0708167
+        ]
+      },
+      "id": "node/9432444875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9432627707",
+        "addr:city": "Fontana",
+        "addr:housenumber": "16803",
+        "addr:postcode": "92335",
+        "addr:state": "CA",
+        "addr:street": "Valley Boulevard",
+        "addr:unit": "C",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "description": "Fontana Ticket office",
+        "name": "Fontana- Futuranet;Fontana - Tufesa;Fontana Agency- Limousine Express",
+        "network": "Futuranet;Tufesa;Limousine Express",
+        "operator": "Futuranet;Tufesa USA;Los Limousines",
+        "phone": "+1-909-822-7777",
+        "public_transport": "station",
+        "source": "https://www.futuranet.com/terminales.html;https://eplalimo.com/terminals",
+        "website": "https://www.tufesainternacional.com/cobertura",
+        "wikidata": "Q18387385",
+        "wikipedia": "en:TUFESA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.437505,
+          34.0699763
+        ]
+      },
+      "id": "node/9432627707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9756474651",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Balboa Pier",
+        "operator": "OCTA",
+        "public_transport": "station",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9012027,
+          33.6012728
+        ]
+      },
+      "id": "node/9756474651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10088767531",
+        "light_rail": "yes",
+        "name": "LAX/Metro Transit Center",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "network:wikipedia": "en:Los Angeles Metro Rail",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "operator:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "owner": "Los Angeles County Metropolitan Transportation Authority",
+        "owner:wikidata": "Q3259702",
+        "owner:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "website": "https://www.metro.net/lax-metro-transit-center/",
+        "wheelchair": "yes",
+        "wikidata": "Q28197629",
+        "wikipedia": "en:LAX/Metro Transit Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.378701,
+          33.9501069
+        ]
+      },
+      "id": "node/10088767531"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10088767532",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "5601",
+        "addr:postcode": "90045",
+        "addr:state": "CA",
+        "addr:street": "West Century Boulevard",
+        "light_rail": "yes",
+        "name": "Aviation/Century",
+        "network": "Metro Rail",
+        "network:wikidata": "Q1339558",
+        "network:wikipedia": "en:Los Angeles Metro Rail",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "operator:wikidata": "Q3259702",
+        "operator:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "owner": "Los Angeles County Metropolitan Transportation Authority",
+        "owner:wikidata": "Q3259702",
+        "owner:wikipedia": "en:Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q16974070",
+        "wikipedia": "en:Aviation/Century station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.378717,
+          33.9459385
+        ]
+      },
+      "id": "node/10088767532"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10115611338",
+        "addr:city": "Fontana",
+        "addr:housenumber": "16820",
+        "addr:postcode": "92335",
+        "addr:state": "CA",
+        "addr:street": "Valley Boulevard",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Santiago Express - Fontana",
+        "network": "Santiago Express",
+        "phone": "+1 909-822-8013",
+        "public_transport": "station",
+        "website": "https://santiagoexpress.mx/destinos.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.4374924,
+          34.0708526
+        ]
+      },
+      "id": "node/10115611338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10547866119",
+        "addr:city": "Pacoima",
+        "addr:housenumber": "10455",
+        "addr:postcode": "91331",
+        "addr:state": "CA",
+        "addr:street": "Laurel Canyon Boulevard",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "description": "boarding only",
+        "name": "Santiago Express - Pacoima",
+        "network": "Santiago Express",
+        "operator": "Santiago Express",
+        "phone": "+1-323-674-6807",
+        "public_transport": "station",
+        "website": "https://santiagoexpress.mx/destinos.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.434116,
+          34.2595686
+        ]
+      },
+      "id": "node/10547866119"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10547888035",
+        "addr:city": "Los Angeles",
+        "addr:housenumber": "4740",
+        "addr:postcode": "90022",
+        "addr:state": "CA",
+        "addr:street": "East Olympic Boulevard",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Santiago Express - Los Angeles",
+        "network": "Santiago Express",
+        "operator": "Santiago Express",
+        "phone": "+1-323-354-4420",
+        "public_transport": "station",
+        "website": "https://santiagoexpress.mx/destinos.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1667932,
+          34.0178501
+        ]
+      },
+      "id": "node/10547888035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10687121788",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Glendale Transportation Center",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2600448,
+          34.1248756
+        ]
+      },
+      "id": "node/10687121788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10811793013",
+        "name": "Pinacate Station",
+        "operator": "Southern California Railway Museum",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.233351,
+          33.760854
+        ]
+      },
+      "id": "node/10811793013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10830019715",
+        "addr:city": "San Bernardino",
+        "addr:housenumber": "599",
+        "addr:postcode": "92401",
+        "addr:state": "CA",
+        "addr:street": "West Rialto Avenue",
+        "air_conditioning": "yes",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "San Bernardino Transit Center",
+        "network": "Omnitrans;RTA;VVTA;MARTA;Pass Transit;Sunline Transit;",
+        "operator": "Omnitrans",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "wikidata": "Q14683861",
+        "wikipedia": "en:San Bernardino Transit Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.296066,
+          34.1002782
+        ]
+      },
+      "id": "node/10830019715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10905828129",
+        "name": "Fairplex",
+        "network": "Metrolink",
+        "note": "special event service only",
+        "public_transport": "station",
+        "railway": "halt",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.7678372,
+          34.0958636
+        ]
+      },
+      "id": "node/10905828129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11000844450",
+        "construction:railway": "halt",
+        "name": "Hesperia/Joshua Street",
+        "note": "planned station based on SBCTA annual report",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:position": "mi:187.84",
+        "source": "https://www.gosbcta.com/wp-content/uploads/2023/06/FY2023-2024-Adopted-Budget.pdf",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3964716,
+          34.4061072
+        ]
+      },
+      "id": "node/11000844450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11104057879",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Rose Hill Transit Center",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1871314,
+          34.0861471
+        ]
+      },
+      "id": "node/11104057879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11253822992",
+        "check_date": "2023-10-23",
+        "name": "Vista Canyon",
+        "network": "Metrolink",
+        "network:wikidata": "Q766647",
+        "operator": "Southern California Regional Rail Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2023-10-23",
+        "train": "yes",
+        "wikidata": "Q104866761"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.433996,
+          34.4129706
+        ]
+      },
+      "id": "node/11253822992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11270757816",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "El Segundo",
+        "network": "Amtrak",
+        "operator": "Amtrak",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3835153,
+          33.9066152
+        ]
+      },
+      "id": "node/11270757816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11270757817",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3835702,
+          33.9067662
+        ]
+      },
+      "id": "node/11270757817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11416417097",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Long Beach Transit Gallery",
+        "operator": "Long Beach Transit",
+        "public_transport": "station",
+        "website": "https://ridelbt.com/long-beach-transit-gallery/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1907857,
+          33.7680955
+        ]
+      },
+      "id": "node/11416417097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11933511507",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Aquarium Dock 4",
+        "network": "Long Beach Transit",
+        "network:wikidata": "Q6672372",
+        "public_transport": "station",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1942752,
+          33.762092
+        ]
+      },
+      "id": "node/11933511507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11933511516",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Queen Mary",
+        "network": "Long Beach Transit",
+        "network:wikidata": "Q6672372",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1921887,
+          33.7537134
+        ]
+      },
+      "id": "node/11933511516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11933511522",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Shoreline Village Dock 9",
+        "network": "Long Beach Transit",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1921789,
+          33.7602595
+        ]
+      },
+      "id": "node/11933511522"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11933561852",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Alamitos Bay Landing Berth 3",
+        "network": "Long Beach Transit",
+        "network:wikidata": "Q6672372",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1156565,
+          33.748004
+        ]
+      },
+      "id": "node/11933561852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11967771426",
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Catalina Express",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1992743,
+          33.7635049
+        ]
+      },
+      "id": "node/11967771426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12229057606",
+        "addr:city": "Barstow",
+        "addr:housenumber": "2796",
+        "addr:postcode": "92311",
+        "addr:state": "CA",
+        "addr:street": "Tanger Way",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0845831,
+          34.8452879
+        ]
+      },
+      "id": "node/12229057606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12372582101",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "LAX FlyAway airport shuttle",
+        "opening_hours": "Mo-Su 03:00-23:30",
+        "phone": "+1-866-435-9529",
+        "public_transport": "station",
+        "website": "http://laxflyaway.org"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2333381,
+          34.0547159
+        ]
+      },
+      "id": "node/12372582101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12897337171",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "LAX/Metro Transit Center",
+        "public_transport": "station",
+        "ref": "30042",
+        "wikidata": "Q28197629",
+        "wikipedia": "en:LAX/Metro Transit Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3780982,
+          33.9514844
+        ]
+      },
+      "id": "node/12897337171"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13156927201",
+        "light_rail": "yes",
+        "name": "La Verne/Fairplex",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q104849656"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.76811,
+          34.0972267
+        ]
+      },
+      "id": "node/13156927201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13156942550",
+        "light_rail": "yes",
+        "name": "San Dimas",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q104849653"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8058485,
+          34.1051705
+        ]
+      },
+      "id": "node/13156942550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13157044124",
+        "light_rail": "yes",
+        "name": "Glendora",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "light_rail",
+        "wikidata": "Q104849652"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8662529,
+          34.1318499
+        ]
+      },
+      "id": "node/13157044124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13807935230",
+        "name": "Wilshire/La Cienega",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q16987182"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3756872,
+          34.0650779
+        ]
+      },
+      "id": "node/13807935230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13807935237",
+        "name": "Wilshire/Fairfax",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q16987173"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3611664,
+          34.0629673
+        ]
+      },
+      "id": "node/13807935237"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13807935243",
+        "name": "Wilshire/La Brea",
+        "network": "LACMTA",
+        "operator": "Los Angeles County Metropolitan Transportation Authority",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q17066434"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3443519,
+          34.062526
+        ]
+      },
+      "id": "node/13807935243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13826306834",
+        "name": "Cottonwood Station",
+        "operator": "Southern California Railway Museum",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2329077,
+          33.7624636
+        ]
+      },
+      "id": "node/13826306834"
+    }
+  ]
+}
