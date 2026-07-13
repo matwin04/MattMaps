@@ -132,7 +132,7 @@ function initMap(lat, lon) {
         container: "map",
         style: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
         center: [lon, lat],
-        zoom: 13,
+        zoom: 13
     });
     map.addControl(new maplibregl.NavigationControl());
     userMarker = new maplibregl.Marker({ color: "#4da3ff" }).setLngLat([lon, lat]).addTo(map);
