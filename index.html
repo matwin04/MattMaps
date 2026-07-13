@@ -1,63 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Metro Realtime Vehicles</title>
-
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.css"
-  />
-  <link rel="stylesheet" href="styles.css" />
-
-  <style>
-    .popup-title {
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
-
-    .delay-late {
-      color: red;
-      font-weight: bold;
-    }
-
-    .delay-ontime {
-      color: green;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-
-<div id="app">
-  <div id="map"></div>
-
-  <aside id="sidebar">
-    <div class="sidebar-header">
-      <h2>Nearby Departures</h2>
-      <span id="departure-count">0</span>
-    </div>
-    <div class="sidebar-body">
-      <table class="vehicle-table">
-        <thead>
-          <tr>
-            <th>Route</th>
-            <th>Headsign</th>
-            <th>ETA</th>
-          </tr>
-        </thead>
-        <tbody id="departure-table-body">
-          <!-- rows injected by script.js -->
-        </tbody>
-      </table>
-    </div>
-  </aside>
-</div>
-
-<script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
-
-<script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nearby Departures - 7th St/Metro Center</title>
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.css" />
+    </head>
+    <body>
+        <div id="app">
+            <h1>Nearby Departures</h1>
+            <div class="subtitle" id="coord-label">7th St/Metro Center &middot; 34.0489, -118.2585</div>
+            <div id="map"></div>
+            <div class="controls">
+                <input type="text" id="lat-input" value="34.0489" />
+                <input type="text" id="lon-input" value="-118.2585" />
+                <button id="refresh-btn">Refresh</button>
+                <button id="locate-btn">Use My Location</button>
+            </div>
+            <h2>Long Distance</h2>
+            <div class="table-scroll">
+                <table id="longDistanceDepartures" class="departure-table">
+                    <thead>
+                        <tr>
+                            <th>Station</th>
+                            <th>Route</th>
+                            <th>Headsign</th>
+                            <th>Departure</th>
+                        </tr>
+                    </thead>
+                    <tbody id="longDistanceDepartures_body"></tbody>
+                </table>
+            </div>
+            <h2>Local</h2>
+            <div class="table-scroll">
+                <table id="localDepartures" class="departure-table">
+                    <thead>
+                        <tr>
+                            <th>Agency</th>
+                            <th>Route</th>
+                            <th>Short Name</th>
+                            <th>Departure</th>
+                        </tr>
+                    </thead>
+                    <tbody id="localDepartures_body"></tbody>
+                </table>
+            </div>
+            <h2>Routes</h2>
+            <div class="table-scroll">
+                <table id="routesTable" class="departure-table">
+                    <thead>
+                        <tr>
+                            <th>Route ID</th>
+                            <th>Short Name</th>
+                            <th>Long Name</th>
+                            <th>Agency</th>
+                            <th>Pill</th>
+                        </tr>
+                    </thead>
+                    <tbody id="routesTable_body"></tbody>
+                </table>
+            </div>
+            <h2>Route Info</h2>
+            <div class="controls">
+                <input type="text" id="chateau-input" placeholder="chateau" value="metro~losangeles" />
+                <input type="text" id="route-id-input" placeholder="route_id" value="802" />
+                <button id="route-info-btn">Lookup</button>
+            </div>
+            <div class="table-scroll">
+                <table id="routeInfo" class="departure-table">
+                    <thead>
+                        <tr>
+                            <th>Short Name</th>
+                            <th>Long Name</th>
+                            <th>Agency</th>
+                            <th>URL</th>
+                            <th>Pill</th>
+                            <th>Stop Count</th>
+                        </tr>
+                    </thead>
+                    <tbody id="routeInfo_body"></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
+        <script src="map.js"></script>
+    </body>
 </html>
