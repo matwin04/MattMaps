@@ -124,6 +124,47 @@ document.getElementById("route-info-btn").addEventListener("click", () => {
     loadRouteInfo(chateau, routeId);
 });
 
+let map;
+let userMarker;
+
+function initMap(lat, lon) {
+    map = new maplibregl.Map({
+        container: "map",
+        style: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
+        center: [lon, lat],
+        zoom: 13,
+    });
+    map.addControl(new maplibregl.NavigationControl());
+    userMarker = new maplibregl.Marker({ color: "#4da3ff" }).setLngLat([lon, lat]).addTo(map);
+}
+
+function updateUserLocation(lat, lon) {
+    document.getElementById("lat-input").value = lat;
+    document.getElementById("lon-input").value = lon;
+    document.getElementById("coord-label").textContent = `${lat}, ${lon}`;
+    if (!map) {
+        initMap(lat, lon);
+    } else {
+        map.setCenter([lon, lat]);
+        userMarker.setLngLat([lon, lat]);
+    }
+    loadNearbLocalStations(lat, lon);
+    loadNearbLocalDepartures(lat, lon);
+    loadNearbyRoutes(lat, lon);
+}
+
+document.getElementById("locate-btn").addEventListener("click", () => {
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            updateUserLocation(position.coords.latitude, position.coords.longitude);
+        },
+        (error) => {
+            console.error(error);
+            alert("Could not get your location.");
+        }
+    );
+});
+
 document.getElementById("refresh-btn").addEventListener("click", () => {
     const lat = document.getElementById("lat-input").value.trim();
     const lon = document.getElementById("lon-input").value.trim();
@@ -132,6 +173,7 @@ document.getElementById("refresh-btn").addEventListener("click", () => {
     loadNearbyRoutes(lat, lon);
 });
 
+initMap(34.0489, -118.2585);
 loadNearbLocalStations("34.0489", "-118.2585");
 loadNearbLocalDepartures("34.0489", "-118.2585");
 loadNearbyRoutes("34.0489", "-118.2585");

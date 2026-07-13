@@ -41,6 +41,14 @@ h1 {
   margin-bottom: 16px;
 }
 
+#map {
+  height: 320px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
 .controls {
   display: flex;
   gap: 8px;
@@ -104,7 +112,7 @@ button:hover {
   overflow-y: auto;
 }
 
-table{
+table.departure-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
