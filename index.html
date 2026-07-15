@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nearby Departures - 7th St/Metro Center</title>
         <link href="styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9/dist/leaflet.css" />
     </head>
     <body>
         <div id="app">
@@ -26,7 +26,8 @@
                             <th>Station</th>
                             <th>Route</th>
                             <th>Headsign</th>
-                            <th>Departure</th>
+                            <th>Scheduled</th>
+                            <th>Realtime</th>
                         </tr>
                     </thead>
                     <tbody id="longDistanceDepartures_body"></tbody>
@@ -39,8 +40,10 @@
                         <tr>
                             <th>Agency</th>
                             <th>Route</th>
-                            <th>Short Name</th>
-                            <th>Departure</th>
+                            <th>Headsign</th>
+                            <th>Stop</th>
+                            <th>Scheduled</th>
+                            <th>Realtime</th>
                         </tr>
                     </thead>
                     <tbody id="localDepartures_body"></tbody>
@@ -83,7 +86,7 @@
                 </table>
             </div>
         </div>
-        <script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9/dist/leaflet.js"></script>
         <script src="map.js"></script>
     </body>
 </html>

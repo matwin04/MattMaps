@@ -80,6 +80,12 @@ async function loadNearbyRoutes(lat, lon) {
             const route = chateauRoutes[routeId];
             const tr = document.createElement("tr");
             tr.innerHTML = `
+                <td>
+                    <a href="/agencies/${chateau}">${chateau}</a>
+                </td>
+                <td>
+                    <a href="/routes/${chateau}/${routeId}">More Info</a>
+                </td>
                 <td>${routeId}</td>
                 <td>${route.short_name ?? "--"}</td>
                 <td>${route.long_name ?? "--"}</td>
