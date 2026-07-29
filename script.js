@@ -1,3 +1,33 @@
+// --- Theme (light/dark) ---
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+
+    const btn = document.getElementById("theme-toggle");
+    const icon = btn?.querySelector("i");
+
+    if (icon) {
+        icon.className = theme === "dark" ? "mdi mdi-white-balance-sunny" : "mdi mdi-weather-night";
+    }
+}
+
+function initTheme() {
+    const stored = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)").matches;
+
+    applyTheme(stored || (prefersDark ? "dark" : "light"));
+}
+
+document.getElementById("theme-toggle")?.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+
+    applyTheme(next);
+    localStorage.setItem("theme", next);
+});
+
+initTheme();
+
 let map;
 let userMarker;
 let stopsLayer = L.layerGroup();

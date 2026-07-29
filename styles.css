@@ -21,10 +21,26 @@
     --primary: #1976d2;
     --primary-hover: #1565c0;
 
-    --shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    --shadow: 0 4px 18px rgba(0, 0, 0, .08);
 
     --sidebar-width: 430px;
     --radius: 12px;
+}
+
+:root[data-theme="dark"] {
+    --bg: #14171c;
+    --surface: #1b1f26;
+    --surface-2: #20242c;
+
+    --border: #2c313b;
+
+    --text: #e7eaef;
+    --muted: #97a1af;
+
+    --primary: #4da3ff;
+    --primary-hover: #7cbaff;
+
+    --shadow: 0 4px 18px rgba(0, 0, 0, .5);
 }
 
 * {
@@ -52,6 +68,8 @@ body {
 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+
+    transition: background-color .2s ease, color .2s ease;
 }
 
 body {
@@ -85,6 +103,11 @@ body {
 /* Header */
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
     background: var(--surface);
 
     border-bottom: 1px solid var(--border);
@@ -94,6 +117,8 @@ header {
     box-shadow: var(--shadow);
 
     z-index: 500;
+
+    transition: background-color .2s ease, border-color .2s ease;
 }
 
 header h1 {
@@ -107,9 +132,47 @@ header h1 {
     margin-top: 6px;
 }
 
+#theme-toggle {
+
+    flex-shrink: 0;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    background: var(--surface-2);
+    color: var(--text);
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: background-color .15s ease, transform .15s ease;
+
+}
+
+#theme-toggle:hover {
+
+    background: var(--border);
+
+}
+
+#theme-toggle:active {
+
+    transform: scale(0.92);
+
+}
+
 /* Toolbar */
 
 .controls {
+
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -124,6 +187,7 @@ header h1 {
 }
 
 .controls input {
+
     height: 38px;
 
     padding: 0 12px;
@@ -136,16 +200,19 @@ header h1 {
 
     outline: none;
 
-    transition: 0.15s;
+    transition: .15s;
 }
 
 .controls input:focus {
+
     border-color: var(--primary);
 
-    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+    box-shadow: 0 0 0 3px rgba(25,118,210,.15);
+
 }
 
 .controls button {
+
     height: 38px;
 
     border: none;
@@ -162,43 +229,54 @@ header h1 {
 
     padding: 0 16px;
 
-    transition: 0.15s;
+    transition: .15s;
 }
 
 .controls button:hover {
+
     background: var(--primary-hover);
+
 }
 
 .controls button i {
+
     margin-right: 6px;
+
 }
 
 /* Main */
 
 .main-layout {
+
     flex: 1;
 
     display: flex;
 
     overflow: hidden;
+
 }
 
 /* Map */
 
 #map-container {
+
     flex: 1;
 
     position: relative;
+
 }
 
 #map {
+
     width: 100%;
     height: 100%;
+
 }
 
 /* Sidebar */
 
 #sidebar {
+
     width: var(--sidebar-width);
 
     min-width: var(--sidebar-width);
@@ -211,10 +289,12 @@ header h1 {
 
     border-right: 1px solid var(--border);
 
-    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 0 12px rgba(0,0,0,.05);
+
 }
 
 #selected-stop {
+
     margin: 0;
 
     padding: 18px;
@@ -224,22 +304,28 @@ header h1 {
     font-weight: 700;
 
     border-bottom: 1px solid var(--border);
+
 }
 
 /* Departure list (divs, not a table) */
 
 .table-scroll {
+
     flex: 1;
 
     overflow: auto;
+
 }
 
 .departure-list {
+
     display: flex;
     flex-direction: column;
+
 }
 
 .departure-row {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -250,14 +336,18 @@ header h1 {
 
     border-bottom: 1px solid #eef2f5;
 
-    transition: background 0.12s;
+    transition: background .12s;
+
 }
 
 .departure-row:hover {
+
     background: #f5f9fd;
+
 }
 
 .departure-main {
+
     display: flex;
     align-items: center;
 
@@ -265,25 +355,31 @@ header h1 {
 
     min-width: 0;
     flex: 1 1 auto;
+
 }
 
 .departure-info {
+
     min-width: 0;
 
     display: flex;
     flex-direction: column;
     gap: 3px;
+
 }
 
 .departure-headsign {
+
     font-weight: 600;
 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
 }
 
 .departure-sub {
+
     display: flex;
     align-items: center;
 
@@ -294,16 +390,20 @@ header h1 {
 
     white-space: nowrap;
     overflow: hidden;
+
 }
 
 .departure-agency {
+
     overflow: hidden;
     text-overflow: ellipsis;
+
 }
 
 /* Time never shrinks and never wraps, so it's always visible */
 
 .departure-time {
+
     flex-shrink: 0;
 
     display: flex;
@@ -315,25 +415,31 @@ header h1 {
     text-align: right;
 
     font-variant-numeric: tabular-nums;
+
 }
 
 .time-scheduled {
+
     font-weight: 700;
     font-size: 14px;
+
 }
 
 .time-realtime {
+
     display: flex;
     align-items: center;
     gap: 3px;
 
     font-size: 12px;
     color: #16a34a;
+
 }
 
 /* Route pill */
 
 .route-pill {
+
     flex-shrink: 0;
 
     display: inline-flex;
@@ -351,11 +457,13 @@ header h1 {
     font-weight: 700;
 
     font-size: 13px;
+
 }
 
 /* Mode badge in the departures table */
 
 .mode-badge {
+
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -375,38 +483,76 @@ header h1 {
     text-transform: capitalize;
 
     white-space: nowrap;
+
 }
 
 .mode-badge .mdi {
+
     font-size: 14px;
+
 }
 
 /* Leaflet */
 
 .leaflet-container {
+
     font-family: "Inter", sans-serif;
+
 }
 
 .leaflet-control-zoom {
+
     border: none !important;
 
     box-shadow: var(--shadow);
+
 }
 
 .leaflet-bar a {
+
     width: 34px;
 
     height: 34px;
 
     line-height: 34px;
+
+}
+
+/* Dark mode: dim the OSM tiles instead of leaving them bright white */
+
+[data-theme="dark"] .leaflet-tile-pane {
+
+    filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9);
+
+}
+
+[data-theme="dark"] .leaflet-control-zoom a {
+
+    background: var(--surface-2);
+    color: var(--text);
+
+}
+
+[data-theme="dark"] .departure-row:hover {
+
+    background: #232833;
+
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+
+    background: #3a4049;
+
 }
 
 /* Material Design Icons */
 
 .mdi {
+
     vertical-align: middle;
 
     font-size: 18px;
+
 }
 
 /* Responsive */
@@ -414,19 +560,26 @@ header h1 {
 /* Tablets: keep side-by-side layout but shrink the sidebar */
 
 @media (max-width: 1100px) {
+
     :root {
+
         --sidebar-width: 340px;
+
     }
 }
 
 /* Small tablets / large phones: stack sidebar above the map */
 
 @media (max-width: 900px) {
+
     .main-layout {
+
         flex-direction: column;
+
     }
 
     #sidebar {
+
         width: 100%;
 
         min-width: 100%;
@@ -437,86 +590,119 @@ header h1 {
 
         border-bottom: 1px solid var(--border);
 
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 12px rgba(0,0,0,.05);
+
     }
 
     #map-container {
+
         flex: 1;
 
         min-height: 0;
+
     }
 
     #map {
+
         height: 100%;
+
     }
 
     header {
+
         padding: 14px 16px;
+
     }
 
     header h1 {
+
         font-size: 22px;
+
     }
 
     .controls {
+
         padding: 10px 16px;
+
     }
 }
 
 /* Phones */
 
 @media (max-width: 560px) {
+
     header h1 {
+
         font-size: 19px;
+
     }
 
     .subtitle {
+
         font-size: 13px;
+
     }
 
     .controls {
+
         gap: 8px;
+
     }
 
     .controls input {
+
         flex: 1 1 42%;
 
         min-width: 0;
+
     }
 
     .controls button {
+
         flex: 1 1 auto;
 
         font-size: 13px;
 
         padding: 0 12px;
+
     }
 
     #sidebar {
+
         height: 38vh;
+
     }
 
     #selected-stop {
+
         padding: 12px 14px;
 
         font-size: 16px;
+
     }
 
     .departure-row {
+
         padding: 9px 12px;
 
         font-size: 13px;
+
     }
 }
 
 /* Very small phones */
 
 @media (max-width: 380px) {
+
     .controls input {
+
         flex: 1 1 100%;
+
     }
 
     #sidebar {
+
         height: 34vh;
+
     }
 }

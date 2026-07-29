@@ -10,19 +10,22 @@
     <body>
         <div id="app">
             <header>
-                <h1>MattMaps</h1>
-                <div class="subtitle">Transit Map</div>
-            </header>
+                <div class="header-text">
+                    <h1>MattMaps</h1>
+                    <div class="subtitle">Transit Map</div>
+                </div>
 
+                <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <i class="mdi mdi-weather-night"></i>
+                </button>
+            </header>
             <div class="main-layout">
                 <aside id="sidebar">
                     <h2 id="selected-stop">Click a stop</h2>
-
                     <div class="table-scroll">
                         <div id="stopTimesTable_body" class="departure-list"></div>
                     </div>
                 </aside>
-
                 <div id="map-container">
                     <div id="map"></div>
                 </div>
