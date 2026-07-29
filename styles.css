@@ -1,191 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css");
 :root {
-  --bg: #0f1115;
-  --panel: #161a20;
-  --border: #262b33;
-  --text: #e6e8eb;
-  --text-dim: #9aa1ab;
-  --accent: #4da3ff;
-  --late: #ff5c5c;
-  --ontime: #3ddc84;
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --border: #d8dde3;
+    --text: #222;
+    --muted: #666;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+:root {
+    --bg: #f3f5f7;
+    --surface: #ffffff;
+    --surface-2: #fafbfc;
+
+    --border: #dde3ea;
+
+    --text: #1f2937;
+    --muted: #6b7280;
+
+    --primary: #1976d2;
+    --primary-hover: #1565c0;
+
+    --shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+
+    --sidebar-width: 430px;
+    --radius: 12px;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
+    margin: 0;
+    height: 100%;
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family:
+        "Inter",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+
+    font-size: 15px;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  padding: 24px;
+    overflow: hidden;
 }
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c8d1db;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Layout */
 
 #app {
-  max-width: 960px;
-  margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
-  font-size: 20px;
-  margin: 0 0 4px;
+/* Header */
+
+header {
+    background: var(--surface);
+
+    border-bottom: 1px solid var(--border);
+
+    padding: 18px 24px;
+
+    box-shadow: var(--shadow);
+
+    z-index: 500;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .subtitle {
-  color: var(--text-dim);
-  font-size: 13px;
-  margin-bottom: 16px;
+    color: var(--muted);
+    margin-top: 6px;
+}
+
+/* Toolbar */
+
+.controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 14px 24px;
+
+    background: var(--surface);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.controls input {
+    height: 38px;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    background: white;
+
+    outline: none;
+
+    transition: 0.15s;
+}
+
+.controls input:focus {
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+}
+
+.controls button {
+    height: 38px;
+
+    border: none;
+
+    border-radius: var(--radius);
+
+    background: var(--primary);
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    padding: 0 16px;
+
+    transition: 0.15s;
+}
+
+.controls button:hover {
+    background: var(--primary-hover);
+}
+
+.controls button i {
+    margin-right: 6px;
+}
+
+/* Main */
+
+.main-layout {
+    flex: 1;
+
+    display: flex;
+
+    overflow: hidden;
+}
+
+/* Map */
+
+#map-container {
+    flex: 1;
+
+    position: relative;
 }
 
 #map {
-  height: 320px;
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  margin-bottom: 16px;
+    width: 100%;
+    height: 100%;
 }
 
-.controls {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin-bottom: 16px;
+/* Sidebar */
+
+#sidebar {
+    width: var(--sidebar-width);
+
+    min-width: var(--sidebar-width);
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: var(--surface);
+
+    border-right: 1px solid var(--border);
+
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.05);
 }
 
-input[type="text"] {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  color: var(--text);
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-size: 13px;
-  width: 110px;
+#selected-stop {
+    margin: 0;
+
+    padding: 18px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid var(--border);
 }
 
-button {
-  background: var(--accent);
-  border: none;
-  color: #0f1115;
-  font-weight: 600;
-  padding: 7px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 13px;
-}
-
-button:hover {
-  opacity: 0.9;
-}
-
-.station-block {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-.station-header {
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.station-name {
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.station-meta {
-  color: var(--text-dim);
-  font-size: 12px;
-}
+/* Departure list (divs, not a table) */
 
 .table-scroll {
-  max-height: 420px;
-  overflow-y: auto;
+    flex: 1;
+
+    overflow: auto;
 }
 
-table.departure-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: 13px;
+.departure-list {
+    display: flex;
+    flex-direction: column;
 }
 
-.departure-table thead th {
-  text-align: left;
-  padding: 10px 16px;
-  color: var(--text-dim);
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  background: var(--panel);
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 1;
+.departure-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 12px 16px;
+
+    border-bottom: 1px solid #eef2f5;
+
+    transition: background 0.12s;
 }
 
-.departure-table tbody td {
-  padding: 10px 16px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: middle;
-  color: var(--text);
+.departure-row:hover {
+    background: #f5f9fd;
 }
 
-.departure-table tbody tr:nth-child(even) td {
-  background: #ffffff05;
+.departure-main {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+    flex: 1 1 auto;
 }
 
-.departure-table tbody tr:hover td {
-  background: #4da3ff14;
+.departure-info {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
-.departure-table tbody tr:last-child td {
-  border-bottom: none;
+.departure-headsign {
+    font-weight: 600;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+.departure-sub {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 12px;
+    color: var(--muted);
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.departure-agency {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Time never shrinks and never wraps, so it's always visible */
+
+.departure-time {
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 2px;
+
+    text-align: right;
+
+    font-variant-numeric: tabular-nums;
+}
+
+.time-scheduled {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.time-realtime {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    font-size: 12px;
+    color: #16a34a;
+}
+
+/* Route pill */
 
 .route-pill {
-  display: inline-block;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: #23283080;
-  border: 1px solid var(--border);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 40px;
+
+    padding: 4px 10px;
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    font-size: 13px;
 }
 
-.delay-late {
-  color: var(--late);
-  font-weight: 600;
+/* Mode badge in the departures table */
+
+.mode-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 3px 9px;
+
+    border-radius: 999px;
+
+    background: var(--marker-color, #555);
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: capitalize;
+
+    white-space: nowrap;
 }
 
-.delay-ontime {
-  color: var(--ontime);
-  font-weight: 600;
+.mode-badge .mdi {
+    font-size: 14px;
 }
 
-.delay-unknown {
-  color: var(--text-dim);
+/* Leaflet */
+
+.leaflet-container {
+    font-family: "Inter", sans-serif;
 }
 
-.status {
-  color: var(--text-dim);
-  font-size: 13px;
-  padding: 20px 0;
+.leaflet-control-zoom {
+    border: none !important;
+
+    box-shadow: var(--shadow);
 }
 
-.agency {
-  color: var(--text-dim);
-  font-size: 11px;
+.leaflet-bar a {
+    width: 34px;
+
+    height: 34px;
+
+    line-height: 34px;
+}
+
+/* Material Design Icons */
+
+.mdi {
+    vertical-align: middle;
+
+    font-size: 18px;
+}
+
+/* Responsive */
+
+/* Tablets: keep side-by-side layout but shrink the sidebar */
+
+@media (max-width: 1100px) {
+    :root {
+        --sidebar-width: 340px;
+    }
+}
+
+/* Small tablets / large phones: stack sidebar above the map */
+
+@media (max-width: 900px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100%;
+
+        min-width: 100%;
+
+        height: 42vh;
+
+        border-right: none;
+
+        border-bottom: 1px solid var(--border);
+
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    #map-container {
+        flex: 1;
+
+        min-height: 0;
+    }
+
+    #map {
+        height: 100%;
+    }
+
+    header {
+        padding: 14px 16px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .controls {
+        padding: 10px 16px;
+    }
+}
+
+/* Phones */
+
+@media (max-width: 560px) {
+    header h1 {
+        font-size: 19px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .controls {
+        gap: 8px;
+    }
+
+    .controls input {
+        flex: 1 1 42%;
+
+        min-width: 0;
+    }
+
+    .controls button {
+        flex: 1 1 auto;
+
+        font-size: 13px;
+
+        padding: 0 12px;
+    }
+
+    #sidebar {
+        height: 38vh;
+    }
+
+    #selected-stop {
+        padding: 12px 14px;
+
+        font-size: 16px;
+    }
+
+    .departure-row {
+        padding: 9px 12px;
+
+        font-size: 13px;
+    }
+}
+
+/* Very small phones */
+
+@media (max-width: 380px) {
+    .controls input {
+        flex: 1 1 100%;
+    }
+
+    #sidebar {
+        height: 34vh;
+    }
 }
