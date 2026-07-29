@@ -252,7 +252,7 @@ async function loadStopTimes(stop) {
 
                 <div class="departure-time">
                     <span class="time-scheduled">${scheduledTime}</span>
-                    ${item.realTime ? `<span class="time-realtime">${realtimeTime} <i class="mdi mdi-check-circle"></i></span>` : ""}
+                    ${item.realTime ? `<span class="time-realtime">${realtimeTime} <i class="mdi mdi-signal-variant"></i></span>` : ""}
                 </div>
             `;
 
