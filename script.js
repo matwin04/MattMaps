@@ -28,9 +28,27 @@ document.getElementById("theme-toggle")?.addEventListener("click", () => {
 
 initTheme();
 
+// Classifies a realtime departure against its schedule so it can be color-coded
+function getDelayInfo(scheduledISO, realtimeISO) {
+    if (!scheduledISO || !realtimeISO) return null;
+
+    const diffMin = Math.round((new Date(realtimeISO) - new Date(scheduledISO)) / 60000);
+
+    if (diffMin <= 0) {
+        return { diffMin, status: "ontime", label: diffMin === 0 ? "On time" : `${Math.abs(diffMin)}m early` };
+    }
+
+    if (diffMin <= 4) {
+        return { diffMin, status: "minor", label: `+${diffMin}m` };
+    }
+
+    return { diffMin, status: "late", label: `+${diffMin}m late` };
+}
+
 let map;
 let userMarker;
 let stopsLayer = L.layerGroup();
+let lastStop = null;
 
 // Icon + color per transit mode (MDI icon classes are already loaded via styles.css)
 const MODE_META = {
@@ -191,6 +209,7 @@ async function loadStopTimes(stop) {
         `&language=en`;
 
     console.log(url);
+    lastStop = stop;
     document.getElementById("selected-stop").textContent = `${stop.name} (${stop.id})`;
 
     try {
@@ -222,6 +241,8 @@ async function loadStopTimes(stop) {
                   })
                 : "";
 
+            const delayInfo = item.realTime ? getDelayInfo(scheduled, realtime) : null;
+
             const row = document.createElement("div");
             row.className = "departure-row";
 
@@ -251,15 +272,146 @@ async function loadStopTimes(stop) {
                 </div>
 
                 <div class="departure-time">
-                    <span class="time-scheduled">${scheduledTime}</span>
-                    ${item.realTime ? `<span class="time-realtime">${realtimeTime} <i class="mdi mdi-signal-variant"></i></span>` : ""}
+                    <span class="time-scheduled${delayInfo && delayInfo.diffMin !== 0 ? " time-scheduled--adjusted" : ""}">${scheduledTime}</span>
+                    ${
+                        item.realTime
+                            ? `<span class="time-realtime status-${delayInfo.status}">
+                                    <i class="mdi mdi-circle-medium"></i>
+                                    ${realtimeTime} · ${delayInfo.label}
+                               </span>`
+                            : ""
+                    }
                 </div>
             `;
+
+            row.addEventListener("click", () => loadTripDetails(item.tripId));
 
             list.appendChild(row);
         });
     } catch (error) {
         console.error("Stop times error:", error);
+    }
+}
+
+function formatDuration(seconds) {
+    const totalMin = Math.round(seconds / 60);
+    const h = Math.floor(totalMin / 60);
+    const m = totalMin % 60;
+
+    if (h <= 0) return `${m} min`;
+    return `${h}h ${m}m`;
+}
+
+function formatClock(iso) {
+    return iso
+        ? new Date(iso).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })
+        : "";
+}
+
+async function loadTripDetails(tripId) {
+    if (!tripId) return;
+
+    const url =
+        `https://api.transitous.org/api/v6/trip` +
+        `?tripId=${encodeURIComponent(tripId)}` +
+        `&joinInterlinedLegs=false` +
+        `&language=en`;
+
+    console.log(url);
+
+    const list = document.getElementById("stopTimesTable_body");
+    list.innerHTML = `<div class="trip-loading">Loading journey…</div>`;
+
+    try {
+        const response = await fetch(url);
+        const itinerary = await response.json();
+
+        document.getElementById("selected-stop").textContent = "Journey details";
+
+        list.innerHTML = "";
+
+        const header = document.createElement("div");
+        header.className = "trip-header";
+        header.innerHTML = `
+            <button id="trip-back-btn" class="back-btn">
+                <i class="mdi mdi-arrow-left"></i> Back
+            </button>
+
+            <div class="trip-summary">
+                <span>${formatClock(itinerary.startTime)} → ${formatClock(itinerary.endTime)}</span>
+                <span>${formatDuration(itinerary.duration)}</span>
+                <span>${itinerary.transfers} transfer${itinerary.transfers === 1 ? "" : "s"}</span>
+            </div>
+        `;
+
+        header.querySelector("#trip-back-btn").addEventListener("click", () => {
+            if (lastStop) loadStopTimes(lastStop);
+        });
+
+        list.appendChild(header);
+
+        const legs = itinerary.legs || [];
+
+        legs.forEach((leg) => {
+            const modeMeta = MODE_META[leg.mode] || DEFAULT_MODE_META;
+            const isTransit = Boolean(leg.tripId);
+
+            const legEl = document.createElement("div");
+            legEl.className = "trip-leg";
+
+            const intermediateStops = leg.intermediateStops || [];
+
+            const stopsHtml = intermediateStops
+                .map(
+                    (stop) => `
+                        <div class="trip-stop">
+                            <span class="trip-stop-name">${stop.name}</span>
+                            <span class="trip-stop-time">${formatClock(stop.departure || stop.arrival)}</span>
+                        </div>
+                    `
+                )
+                .join("");
+
+            legEl.innerHTML = `
+                <div class="trip-leg-main">
+                    <span class="mode-badge" style="--marker-color:${modeMeta.color}">
+                        <i class="mdi ${modeMeta.icon}"></i>
+                        ${isTransit ? leg.routeShortName || leg.displayName || leg.mode : leg.mode.replaceAll("_", " ")}
+                    </span>
+
+                    <div class="trip-leg-info">
+                        <div class="trip-leg-headsign">${isTransit ? leg.headsign || "" : `${formatDuration(leg.duration)}`}</div>
+                        <div class="trip-leg-sub">${leg.agencyName || ""}</div>
+                    </div>
+                </div>
+
+                <div class="trip-leg-endpoints">
+                    <div class="trip-endpoint">
+                        <span class="trip-endpoint-time">${formatClock(leg.startTime)}</span>
+                        <span class="trip-endpoint-name">${leg.from?.name || ""}</span>
+                    </div>
+
+                    ${
+                        intermediateStops.length
+                            ? `<details class="trip-intermediate">
+                                    <summary>${intermediateStops.length} stop${intermediateStops.length === 1 ? "" : "s"}</summary>
+                                    ${stopsHtml}
+                               </details>`
+                            : ""
+                    }
+
+                    <div class="trip-endpoint">
+                        <span class="trip-endpoint-time">${formatClock(leg.endTime)}</span>
+                        <span class="trip-endpoint-name">${leg.to?.name || ""}</span>
+                    </div>
+                </div>
+            `;
+
+            list.appendChild(legEl);
+        });
+    } catch (error) {
+        console.error("Trip details error:", error);
+        list.innerHTML = `<div class="trip-loading">Couldn't load this trip.</div>`;
     }
 }
 
