@@ -101,23 +101,63 @@ function initMap(lat, lon) {
 }
 
 async function loadStops() {
-      const bounds = map.getBounds();
-      const zoom = map.getZoom();
+    const bounds = map.getBounds();
+    const zoom = map.getZoom();
 
-      const min = `${bounds.getSouth()},${bounds.getWest()}`;
-      const max = `${bounds.getNorth()},${bounds.getEast()}`;
+    const min = `${bounds.getSouth()},${bounds.getWest()}`;
+    const max = `${bounds.getNorth()},${bounds.getEast()}`;
 
-      const grouped = zoom < 16;
-      const modes = []; // empty = all modes; or e.g. ["BUS", "SUBWAY", "TRAM"] to filter
+    let grouped;
+    let modes;
 
-      const url =
-          `https://api.transitous.org/api/v6/map/stops` +
-          `?min=${encodeURIComponent(min)}` +
-          `&max=${encodeURIComponent(max)}` +
-          `&grouped=${grouped}` +
-          `&modes=${modes.join(",")}`;
-  console.log(url);
-  console.log(modes);
+    if (zoom >= 16) {
+        // Detailed view
+        grouped = false;
+
+        modes = [
+            "AIRPLANE",
+            "NIGHT_RAIL",
+            "HIGHSPEED_RAIL",
+            "LONG_DISTANCE",
+            "COACH",
+            "REGIONAL_RAIL",
+            "SUBURBAN",
+            "FERRY",
+            "SUBWAY",
+            "TRAM",
+            "BUS",
+            "FUNICULAR",
+            "AERIAL_LIFT"
+        ];
+    } else {
+        // Wide view - no bus stops
+        grouped = true;
+
+        modes = [
+            "AIRPLANE",
+            "NIGHT_RAIL",
+            "HIGHSPEED_RAIL",
+            "LONG_DISTANCE",
+            "COACH",
+            "REGIONAL_RAIL",
+            "SUBURBAN",
+            "FERRY",
+            "SUBWAY",
+            "TRAM",
+            "FUNICULAR",
+            "AERIAL_LIFT"
+        ];
+    }
+
+    const url =
+        `https://api.transitous.org/api/v6/map/stops` +
+        `?min=${encodeURIComponent(min)}` +
+        `&max=${encodeURIComponent(max)}` +
+        `&grouped=${grouped}` +
+        `&modes=${modes.join(",")}`;
+
+    console.log(url);
+    console.log(modes);
 
     try {
         const response = await fetch(url);
@@ -126,10 +166,9 @@ async function loadStops() {
         stopsLayer.clearLayers();
 
         const stops = data.stops || data;
-      console.log("bong hit transplant");
+        console.log("bong hit transplant");
         stops.forEach((stop) => {
             const lat = stop.lat ?? stop.location?.lat;
-
             const lon = stop.lon ?? stop.location?.lon;
 
             if (!lat || !lon) return;
@@ -157,7 +196,6 @@ async function loadStops() {
         console.error("Transitous stops error:", error);
     }
 }
-
 async function loadStopTimes(stop) {
     const now = new Date().toISOString();
     const url =
