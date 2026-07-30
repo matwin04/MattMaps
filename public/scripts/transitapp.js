@@ -1,25 +1,46 @@
 let map;
 let userMarker;
 let stopsLayer = L.layerGroup();
-let bikesLayer = L.layerGroup();
+let bikesLayers = {}; // one layer per provider, so you can toggle them independently
 
-let vehicleTypesCache = null; // cache so we don't refetch on every click
+let vehicleTypesCache = {}; // keyed by provider
+const gbfsSources = {
+  veoride: {
+    base: 'https://cluster-prod.veoride.com/api/shares/name/xla/gbfs',
+    free_bike_status: 'https://cluster-prod.veoride.com/api/shares/name/xla/gbfs/free_bike_status',
+    vehicle_types: 'https://cluster-prod.veoride.com/api/shares/name/xla/gbfs/vehicle_types',
+    station_information: 'https://cluster-prod.veoride.com/api/shares/name/xla/gbfs/station_information',
+    station_status: 'https://cluster-prod.veoride.com/api/shares/name/xla/gbfs/station_status'
+  },
+  bird: {
+    base: 'https://mds.bird.co/gbfs/v2/public/los-angeles/gbfs.json', // placeholder, swap for real endpoint
+    free_bike_status: 'https://mds.bird.co/gbfs/v2/public/los-angeles/free_bike_status.json',
+    vehicle_types: 'https://mds.bird.co/gbfs/v2/public/los-angeles/vehicle_types.json'
+  },
+  metrobikeshare: {
+    base: 'https://gbfs.bcycle.com/bcycle_lametro', // placeholder
+    free_bike_status: 'https://gbfs.bcycle.com/bcycle_lametro/free_bike_status.json',
+    station_information: 'https://gbfs.bcycle.com/bcycle_lametro/station_information.json',
+    station_status: 'https://gbfs.bcycle.com/bcycle_lametro/station_status.json'
+  }
+};
+async function loadBikeTypeInfo(provider, vehicleTypeId) {
+  const source = gbfsSources[provider];
+  if (!source || !source.vehicle_types) return;
 
-async function loadBikeTypeInfo(vehicleTypeId) {
-  const url = 'https://cluster-prod.veoride.com/api/shares/name/xla/gbfs/vehicle_types';
   const options = { method: 'GET' };
 
   try {
-    if (!vehicleTypesCache) {
-      const response = await fetch(url, options);
+    if (!vehicleTypesCache[provider]) {
+      const response = await fetch(source.vehicle_types, options);
       const data = await response.json();
-      vehicleTypesCache = data.data.vehicle_types;
+      vehicleTypesCache[provider] = data.data.vehicle_types;
     }
 
-    const vType = vehicleTypesCache.find(v => v.vehicle_type_id === vehicleTypeId);
+    const vType = vehicleTypesCache[provider].find(v => v.vehicle_type_id === vehicleTypeId);
 
     if (!vType) {
-      console.warn(`No vehicle type found for id ${vehicleTypeId}`);
+      console.warn(`No vehicle type found for id ${vehicleTypeId} (${provider})`);
       return;
     }
 
@@ -44,26 +65,34 @@ async function loadBikeTypeInfo(vehicleTypeId) {
   }
 }
 
-async function loadBikes() {
-  const url = 'https://cluster-prod.veoride.com/api/shares/name/xla/gbfs/free_bike_status';
+async function loadBikes(provider) {
+  const source = gbfsSources[provider];
+  if (!source || !source.free_bike_status) {
+    console.warn(`No free_bike_status endpoint for ${provider}`);
+    return;
+  }
+
+  if (!bikesLayers[provider]) {
+    bikesLayers[provider] = L.layerGroup().addTo(map);
+  }
+  const layer = bikesLayers[provider];
+
   const options = { method: 'GET' };
 
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(source.free_bike_status, options);
     const data = await response.json();
-    bikesLayer.clearLayers();
+    layer.clearLayers();
 
     const bikes = data.data.bikes;
-    console.log(`Loaded ${bikes.length} bikes`);
+    console.log(`[${provider}] Loaded ${bikes.length} bikes`);
 
     bikes.forEach((bike) => {
       if (bike.is_disabled) return;
 
-      const lat = bike.lat;
-      const lon = bike.lon;
       const color = bike.is_reserved ? '#999999' : '#2ecc71';
 
-      const marker = L.circleMarker([lat, lon], {
+      const marker = L.circleMarker([bike.lat, bike.lon], {
         radius: 6,
         color: color,
         fillColor: color,
@@ -71,33 +100,38 @@ async function loadBikes() {
         weight: 1
       });
 
-      marker.on('click', () => showBikeInfo(bike));
-      marker.addTo(bikesLayer);
+      marker.on('click', () => showBikeInfo(provider, bike));
+      marker.addTo(layer);
     });
 
   } catch (error) {
-    console.error(error);
+    console.error(`[${provider}]`, error);
   }
 }
 
-function showBikeInfo(bike) {
-  document.getElementById('selected-stop').textContent = `Bike ${bike.bike_id.slice(0, 8)}`;
+function showBikeInfo(provider, bike) {
+  document.getElementById('selected-stop').textContent = `Bike ${bike.bike_id.slice(0, 8)} (${provider})`;
 
   const rangeKm = (bike.current_range_meters / 1000).toFixed(1);
   const status = bike.is_reserved ? 'Reserved' : 'Available';
 
   document.getElementById('stopTimesTable_body').innerHTML = `
     <div class="bike-info">
+      <p><strong>Provider:</strong> ${provider}</p>
       <p><strong>Status:</strong> ${status}</p>
       <p><strong>Range:</strong> ${rangeKm} km</p>
       <p><strong>Vehicle type:</strong> ${bike.vehicle_type_id}</p>
       <p><strong>Pricing plan:</strong> ${bike.pricing_plan_id}</p>
       <p><strong>Location:</strong> ${bike.lat.toFixed(5)}, ${bike.lon.toFixed(5)}</p>
-      <p><a href="${bike.rental_uris.ios}" target="_blank">Open rental link</a></p>
+
     </div>
   `;
 
-  loadBikeTypeInfo(bike.vehicle_type_id);
+  loadBikeTypeInfo(provider, bike.vehicle_type_id);
+}
+
+function loadAllBikes() {
+  Object.keys(gbfsSources).forEach(provider => loadBikes(provider));
 }
 
 function initMap(lat, lon) {
@@ -109,7 +143,6 @@ function initMap(lat, lon) {
   }).addTo(map);
 
   stopsLayer.addTo(map);
-  bikesLayer.addTo(map);
 
   userMarker = L.circleMarker([lat, lon], {
     radius: 8,
@@ -119,7 +152,7 @@ function initMap(lat, lon) {
     weight: 2
   }).addTo(map);
 
-  loadBikes();
+  loadAllBikes();
 
   //loadStops();
   //map.on("moveend", loadStops);
