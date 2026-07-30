@@ -68,16 +68,16 @@ const MODE_META = {
 };
 const DEFAULT_MODE_META = { icon: "mdi-map-marker", color: "#555555" };
 
+
 function createStopMarkerStyle(grouped) {
     return {
-        radius: grouped ? 5 : 7,
-        color: grouped ? "#555" : "#ff6600",
-        fillColor: grouped ? "#555" : "#ff6600",
+        radius: grouped ? 9 : 7,
+        color: grouped ? "#ffffff" : "#ff6600",
+        fillColor: grouped ? "#ffffff" : "#ff6600",
         fillOpacity: 0.9,
         weight: 2
     };
 }
-
 function initMap(lat, lon) {
     map = L.map("map").setView([lat, lon], 15);
 
