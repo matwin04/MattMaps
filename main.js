@@ -57,16 +57,16 @@ app.get("/", async (req, res) => {
 app.get("/testing", async (req, res) => {
     res.render("rawgtfs");
 });
-app.get("/agencies",async(req,res)=>{
-    res.render("agencies");
-})
-
-app.get("/transit", async (req, res) => {
-    res.render("map");
+app.get("/maps",async(req,res)=>{
+    res.render("maps");
 });
 
-app.get("/bikes", async (req, res) => {
-    res.render("bikes");
+app.get("/maps/catenarymaps", async (req, res) => {
+    res.render("catenary");
+});
+
+app.get("/maps/transitland", async (req, res) => {
+    res.render("transitland");
 });
 
 app.get("/departures", async (req, res) => {
