@@ -165,7 +165,7 @@ async function loadStops() {
         stopsLayer.clearLayers();
 
         const stops = data.stops || data;
-
+      console.log("bong hit transplant");
         stops.forEach((stop) => {
             const lat = stop.lat ?? stop.location?.lat;
 
@@ -196,7 +196,7 @@ async function loadStops() {
         console.error("Transitous stops error:", error);
     }
 }
-
+async
 async function loadStopTimes(stop) {
     const now = new Date().toISOString();
     const url =
