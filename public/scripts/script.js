@@ -196,7 +196,7 @@ async function loadStops() {
         console.error("Transitous stops error:", error);
     }
 }
-async
+
 async function loadStopTimes(stop) {
     const now = new Date().toISOString();
     const url =
