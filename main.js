@@ -65,9 +65,12 @@ app.get("/maps/catenarymaps", async (req, res) => {
     res.render("catenary");
 });
 
-app.get("/maps/transitland", async (req, res) => {
-    res.render("transitland");
+app.get("/maps/transitapp", async (req, res) => {
+    res.render("transitapp");
 });
+app.get("/maps/transitland", async (req, res) => {
+  res.render("transitland");
+})
 
 app.get("/departures", async (req, res) => {
     res.render("station");

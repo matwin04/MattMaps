@@ -110,44 +110,6 @@ async function loadStops() {
     let grouped;
     let modes;
 
-    if (zoom >= 16) {
-        // Detailed view
-        grouped = false;
-
-        modes = [
-            "AIRPLANE",
-            "NIGHT_RAIL",
-            "HIGHSPEED_RAIL",
-            "LONG_DISTANCE",
-            "COACH",
-            "REGIONAL_RAIL",
-            "SUBURBAN",
-            "FERRY",
-            "SUBWAY",
-            "TRAM",
-            "BUS",
-            "FUNICULAR",
-            "AERIAL_LIFT"
-        ];
-    } else {
-        // Wide view - no bus stops
-        grouped = true;
-
-        modes = [
-            "AIRPLANE",
-            "NIGHT_RAIL",
-            "HIGHSPEED_RAIL",
-            "LONG_DISTANCE",
-            "COACH",
-            "REGIONAL_RAIL",
-            "SUBURBAN",
-            "FERRY",
-            "SUBWAY",
-            "TRAM",
-            "FUNICULAR",
-            "AERIAL_LIFT"
-        ];
-    }
 
     const url =
         `https://api.transitous.org/api/v6/map/stops` +
@@ -414,11 +376,8 @@ async function loadTripDetails(tripId) {
 
 function updateUserLocation(lat, lon) {
     document.getElementById("lat-input").value = lat;
-
     document.getElementById("lon-input").value = lon;
-
     document.getElementById("coord-label").textContent = `${lat.toFixed(6)}, ${lon.toFixed(6)}`;
-
     if (!map) {
         initMap(lat, lon);
     } else {
