@@ -101,23 +101,21 @@ function initMap(lat, lon) {
 }
 
 async function loadStops() {
-    const bounds = map.getBounds();
-    const zoom = map.getZoom();
+      const bounds = map.getBounds();
+      const zoom = map.getZoom();
 
-    const min = `${bounds.getSouth()},${bounds.getWest()}`;
-    const max = `${bounds.getNorth()},${bounds.getEast()}`;
+      const min = `${bounds.getSouth()},${bounds.getWest()}`;
+      const max = `${bounds.getNorth()},${bounds.getEast()}`;
 
-    let grouped;
-    let modes;
+      const grouped = zoom < 16;
+      const modes = []; // empty = all modes; or e.g. ["BUS", "SUBWAY", "TRAM"] to filter
 
-
-    const url =
-        `https://api.transitous.org/api/v6/map/stops` +
-        `?min=${encodeURIComponent(min)}` +
-        `&max=${encodeURIComponent(max)}` +
-        `&grouped=${grouped}` +
-        `&modes=${modes.join(",")}`;
-
+      const url =
+          `https://api.transitous.org/api/v6/map/stops` +
+          `?min=${encodeURIComponent(min)}` +
+          `&max=${encodeURIComponent(max)}` +
+          `&grouped=${grouped}` +
+          `&modes=${modes.join(",")}`;
   console.log(url);
   console.log(modes);
 
