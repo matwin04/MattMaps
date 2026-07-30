@@ -118,7 +118,8 @@ async function loadStops() {
         `&grouped=${grouped}` +
         `&modes=${modes.join(",")}`;
 
-    console.log(url);
+  console.log(url);
+  console.log(modes);
 
     try {
         const response = await fetch(url);
