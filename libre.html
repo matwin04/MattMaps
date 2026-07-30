@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MapLibre Stations Example</title>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+<style>
+  html, body, #map { height: 100%; margin: 0; }
+  .station-popup { font-size: 13px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+let map;
+
+function initMap(lat, lon) {
+  map = new maplibregl.Map({
+    container: "map",
+    style: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
+    center: [lon, lat],
+    zoom: 15
+  });
+
+  map.on("load", () => {
+    map.addSource("stations", {
+      type: "geojson",
+      data: { type: "FeatureCollection", features: [] }
+    });
+
+    map.addLayer({
+      id: "stations-layer",
+      type: "circle",
+      source: "stations",
+      paint: {
+        "circle-radius": 6,
+        "circle-color": "#e63946",
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5
+      }
+    });
+
+    new maplibregl.Marker({ color: "#4da3ff" }).setLngLat([lon, lat]).addTo(map);
+
+    // click to show popup
+    map.on("click", "stations-layer", (e) => {
+      const f = e.features[0];
+      new maplibregl.Popup()
+        .setLngLat(f.geometry.coordinates)
+        .setHTML(
+          `<div class="station-popup"><strong>${escapeHtml(f.properties.name)}</strong><br>${escapeHtml(f.properties.mode)}</div>`
+        )
+        .addTo(map);
+    });
+    map.on("mouseenter", "stations-layer", () => map.getCanvas().style.cursor = "pointer");
+    map.on("mouseleave", "stations-layer", () => map.getCanvas().style.cursor = "");
+
+    loadStops();
+    map.on("moveend", loadStops);
+  });
+}
+
+function bboxFromMap() {
+  // Overpass bbox order: south,west,north,east
+  const b = map.getBounds();
+  return [b.getSouth(), b.getWest(), b.getNorth(), b.getEast()].join(",");
+}
+
+function buildQuery(bbox) {
+  return `[out:json][timeout:90][bbox:${bbox}];
+(
+  node[railway~"^(station|halt|stop|tram_stop)$"];
+  node[public_transport=station];
+);
+out body;`;
+}
+
+async function loadStops() {
+  const bbox = bboxFromMap();
+  const query = buildQuery(bbox);
+
+  let data;
+  try {
+    const res = await fetch("https://overpass-api.de/api/interpreter", {
+      method: "POST",
+      body: "data=" + encodeURIComponent(query)
+    });
+    data = await res.json();
+  } catch (err) {
+    console.error("Overpass fetch failed:", err);
+    return;
+  }
+
+  const features = data.elements
+    .filter(el => el.type === "node")
+    .map(el => {
+      const tags = el.tags || {};
+      return {
+        type: "Feature",
+        geometry: { type: "Point", coordinates: [el.lon, el.lat] },
+        properties: {
+          name: tags.name || "(unnamed station)",
+          mode: tags.railway || tags.public_transport || "station"
+        }
+      };
+    });
+
+  const source = map.getSource("stations");
+  if (source) {
+    source.setData({ type: "FeatureCollection", features });
+  }
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, c => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
+}
+
+// Example: start centered on downtown LA
+initMap(34.0522, -118.2437);
+</script>
+</body>
+</html>
